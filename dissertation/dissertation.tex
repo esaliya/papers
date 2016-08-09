@@ -1,0 +1,55 @@
+% http://graduate.indiana.edu/theses-dissertations/formatting/doctoral.shtml
+% http://graduate.indiana.edu/theses-dissertations/submission/doctoral.shtml
+
+\documentclass[11pt,onehalfspacing,final]{iuthesis}
+
+\input packages
+
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+\counterwithin{section}{chapter}
+
+\title{Towards a Systematic Study of Big Data Performance and Benchmarking}
+\author{Saliya Ekanayake}
+\advisor{Geoffrey Fox}
+\secondreader{Andrew Lumsdaine}
+\thirdreader{Judy Qiu}
+\fourthreader{Haixu Tang}
+
+\department{School of Informatics and Computing}
+\copyrightyear{2016}
+
+\submitdate{May 31 2016} 
+
+\begin{document}
+
+\input frontmatter
+
+\mainmatter
+\acresetall
+
+% Content goes here.
+\input chp_introduction
+\input chp_background
+\input chp_relatedwork
+\input chp_bmclassification
+\input chp_spidaljava
+\input chp_challenges
+\input chp_evaluation
+\input chp_conclusion
+
+\clearpage
+
+\pagestyle{headings}
+\bibliographystyle{plain}
+\bibliography{common/references}
+\phantomsection			%Anchor for hyper-ref to link from the TOC correctly
+
+\backmatter
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

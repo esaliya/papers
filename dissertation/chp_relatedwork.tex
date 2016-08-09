@@ -1,0 +1,110 @@
+\chapter{Related Work}
+\label{ch:relatedwork}
+Standardizing, classifying, and evaluating Big Data benchmarks have continue from here
+
+You can include Dawrfs as related work too. Also, Ogres. Include a diagram of Ogres.
+
+Other ones possibly include work from Chaitan Baru.
+
+Also, include any work trying to evaluate performance
+
+\todo{below are all the benchmarks}
+
+Big data problems are diverse in nature. Unlike \ac{HPC} benchmarks that are well-established and pioneered for performance, the diversity of big data has made it complex and challenging to devise benchmarks. However, with the growing interest from the industry, a number of big data benchmarks have been developed in the recent years. In this chapter, we will survey the landscape of benchmarks including \ac{HPC} benchmarks in order to better understand the coverage and the need for a systematic classification scheme.
+
+\section{\ac{HPC} Benchmarks}
+\subsection{LINPACK and Its Variants}
+The bloodline of \acs{LINPACK}~\cite{Dongarra1988} includes its shared memory version – \acs{LAPACK}~\cite{Anderson:1990:LPL:110382.110385}, the parallel distributed memory implementation – \acs{ScaLAPACK}~\cite{1392882}, and the Top500’s~\footnote{http://www.top500.org/} yardstick – \acs{HPL}~\footnote{http://www.netlib.org/benchmark/hpl}. These are kernel solvers for dense linear systems of the form $Ax=b$. The strategy is to use \ac{LU} factorization followed by a solver that totals $2n^3/3+2n^2$ \acp{flop}. The performance metric is \acp{flop} per second – generally mega or giga \acp{flop} per second (Mflop/s of Gflop/s).
+
+The \acs{LINPACK} benchmark report~\cite{Dongarra:1992:PVC:141868.141871} includes results from three benchmarks – \acs{LINPACK} Fortran n=100, \acs{LINPACK} n=1000, and \acs{HPL}. The first is a sequential Fortran based solver for a matrix of order 100. The rules specify that no change other than compiler optimizations are allowed for this case. The second benchmark is for a matrix of order 1000 with relaxed rules where the user can replace the \ac{LU} factorization and solver steps. The report also includes results exploiting shared memory parallelism in a fork-join style for the n=1000 test. \ac{HPL} benchmark relaxes both the choice of implementation and problem size. Its parallel algorithm for distributed memory systems is explained in \ac{HPL} algorithm report~\footnote{http://www.netlib.org/benchmark/hpl/algorithm.html} and a scalable implementation is packaged into the \ac{HPL} software distribution that scales both with respect to the amount of computation and communication volume as long as the memory usage per processor is maintained~\cite{Dongarra03thelinpack}. 
+
+\subsection{\acp{NPB}}
+\acp{NPB} are a set of kernel and pseudo applications derived from \ac{CFD} applications. They are meant to compare the performance of parallel computers and to serve as a standard indicator of performance~\cite{4912932}. The original \ac{NPB} 1, which is a paper and pencil specification, includes 5 kernels and 3 pseudo applications. Optimized \ac{MPI} parallel implementations became available since version 2.3.
+
+The original benchmark set was extended with a \ac{MZ} implementations of the original \ac{BT}, \ac{SP}, and \ac{LU} pseudo applications. \ac{MZ} versions intend to exploit multiple levels of parallelism and the implementations use  MPI plus threading with OpenMP~\footnote{http://openmp.org/wp/}. \ac{NPB} was further extended to include benchmarks that evaluate unstructured computation, parallel I/O, and data movement. Parallel to NPB, another set of benchmarks were introduced as \acs{GridNPB} to rate the performance of grid environments. 
+
+A notable feature in \ac{NPB} is its well defined benchmark classes – small (S), workstation (W), standard, and large. Standard class is further divided into sub classes A, B, and C with problem size increasing roughly 4 times from going one class to the next. The large class also introduce D, E, and F sub classes where the problem size increase is roughly 16 times. A detailed description of the actual problem sizes for each class is available in \ac{NPB} web site~\footnote{http://www.nas.nasa.gov/publications/npb_problem_sizes.html} and we capture this property in our proposed classification strategy as well.
+
+\section{Big Data Benchmarks}
+There is a range of big data benchmarks in the current literature and the following sections describe a selected few covering different areas.
+
+\subsection{BigDataBench}
+BigDataBench~\cite{handbookofbigdatabench,DBLP:journals/corr/WangZLZYHGJSZZLZLQ14} is a benchmark suite targeting Internet services. There is a total of 34 benchmarks (or workloads as the authors refer) implemented and they are classified into 5 application domains – search engine, social network, e-commerce, multimedia data analytics, and bioinformatics. Moreover, some of these benchmarks have multiple implementations to suite different big data frameworks. The implementations use several components of the \ac{ABDS}~\footnote{http://hpc-abds.org/kaleidoscope/} and some of their commercial adaptations. An extracted summary of benchmarks is given in \textcolor{red}{Table 3}. 
+
+The latest (version 3.1) handbook of the BigDataBench mentions that each workload is quantified over 45 micro-architectural level metrics from the categories instruction mix, cache behavior, TLB behavior, branch execution, pipeline behavior, offcore request, snoop response, parallelism, and operation intensity. The original paper~\cite{DBLP:journals/corr/WangZLZYHGJSZZLZLQ14} also presents 3 user perceivable metrics – processes \ac{RPS}, \ac{OPS}, and \ac{DPS}. Note, each of these are relevant only for some workloads.
+
+\LTXtable{\textwidth}{tbls/tbl_bigdatabenchmark}
+
+BigDataBench presents two things – implications of data volume and benchmark characterization. The paper~\cite{DBLP:journals/corr/WangZLZYHGJSZZLZLQ14} presents the importance of testing with increasing loads to figure out the performance trends in each case. The metrics, \ac{MIPS} and cache \ac{MPKI} are given to elaborate this fact. The benchmark characterization measures operation intensity and effects of hierarchical memory. In conclusion they present that the kind of benchmarks tested in BigDataBench show relatively low ratios of computation to memory accesses compared to traditional HPC benchmarks. Further, they show that L3 caches show the least \ac{MPKI} numbers for these benchmarks and that a possible cause of seeing higher \ac{MPKI} values in lower level caches (L1, L2) could be due to the use of deep software stacks.
+
+BigDataBench besides providing a large number of benchmarks and metrics, also presents a way to reduce the number of benchmarks that one would need to run in order to assess a system comprehensively. The strategy behind this is, instead of characterizing a benchmark into 45 (micro-architectural metrics) dimensions, pick the most uncorrelated dimensions with the help of running \ac{PCA}~\cite{DBLP:journals/corr/WangZLZYHGJSZZLZLQ14} and then cluster the benchmark performance vectors with K-means clustering to form groups of similar benchmarks. Then pick a representative benchmark from each cluster either by picking on close to the edge of a cluster or the mid of a cluster. There are two lists of such shortlisted benchmarks presented in~\cite{handbookofbigdatabench}.
+
+\subsection{HiBench}
+HiBench~\cite{hibench} is a Hadoop benchmark suite intended to evaluate MapReduce styled applications. It identifies the interest in the community to use Hadoop and its ecosystem – Pig, Hive, Mahout, etc. – to areas such as machine learning, bioinformatics, and financial analysis. The introduction of HiBench, as it authors claim, is to overcome the limited representation and diversity of existing benchmarks for Hadoop at its time. The benchmarks they have compared are sort programs, GridMix~\footnote{https://developer.yahoo.com/blogs/hadoop/gridmix3-emulating-production-workload-apache-hadoop-450.html}, DFSIO~\footnote{http://epaulson.github.io/HadoopInternals/benchmarks.html\#dfsio}, and Hive performance benchmark~\footnote{https://issues.apache.org/jira/browse/HIVE-396}.  A few reasons why these do not produce a fair evaluation are, 1) do not exhibit computations compared to real applications, 2) no data access outside map tasks, and 3) represent only analytical database queries (Hive benchmarks), which do not evaluate MapReduce over a broad spectrum of large data analysis. 
+
+HiBench introduces micro-benchmarks and real world applications. The micro-benchmarks include the original Sort, WordCount, and TeraSort from Hadoop distribution itself. The real applications are Nutch indexing, PageRank, Bayesian classification, K-means clustering, and EnhancedDFSIO. The latter could be identified as a micro-benchmark in today’s context and is an extension on the original DFSIO to include measure aggregated I/O bandwidth. HiBench evaluates these benchmarks for job running time and throughput, aggregated \ac{HDFS} bandwidth, utilization of CPU, memory and I/O, and data access patterns, i.e. data sizes in map-in, map-out/combiner-in, combiner-out/shuffle-in, and reduce out stages. In conclusion the authors claim HiBench represents a wider range of data analytic problems with diverse data access and resource utilization patterns. Latest release for HiBench is version 3.0 done on October 2014 and is available at~\cite{hibench.dbms}.
+
+\subsection{Graph500}
+Graph500~\footnote{http://www.graph500.org/}, unlike other big data benchmarks, is intended to evaluate a variety of architectures, programming models, and languages and frameworks against data intensive workloads. It brings to light the point that systems targeted for traditional physics simulations may not be the best for data intensive problems. The benchmark performs breadth-first graph search and defines 6 problem classes denoted as levels 10 through 15.  These indicate the storage in bytes required to store the edge list such that for a given level, $L$, the size will be in the order of $10^L$. 
+
+There are 2 timed kernels in Graph500 – kernel 1 creates a graph representation from an edge list and kernel 2 performs the \ac{BFS}. Kernel 2 is run multiple times (64 times usually) each with a different starting vertex. After each run a soft validation is run on results. The soft validation checks for properties of a correct \ac{BFS} tree rather verifying if the resultant \ac{BFS} tree is the one for the input graph and the particular starting vertex. The performance metric of Graph500 defines a new rate called \ac{TEPS}. It is defined as $\ac{TEPS}=m/time_{k2}$, where $m$ is the number of edges including any multiple edges and self-loops, and $time_{k2}$ is the kernel 2’s execution time. 
+
+\subsection{BigBench}
+BigBench~\cite{bigbench, bigbench.site} is an industry lead effort to defining a comprehensive big data benchmark that emerged with a proposal that appeared in the first \ac{WBDB}~\cite{wbdb}. It is a paper and pencil specification, but comes with a reference implementation to get started. BigBench models a retailer and benchmarks 30 queries around it covering 5 business categories depicted in the McKinsey report~\cite{mckinsey}. 
+
+The retailer data model in BigBench address the three V’s – volume, variety, and velocity – of big data systems. It covers variety by introducing structured, semi-structured, and unstructured data in the model. While the first is an adaptation from the TPC-DS~\footnote{http://www.tpc.org/information/benchmarks.asp} benchmark’s data model, the semi-structured data represents the click stream on the site, and unstructured data denotes product reviews submitted by users. Volume and velocity are covered with a scale factor in the specification that determines the size for all data types, and a periodic refresh process based on TPC-DS’s data maintenance respectively. 
+
+Part of the BigBench research is on data generation, which includes an extension to the popular \ac{PDGF}~\cite{pdgf} to generate the click stream data (semi-structured), and a novel synthetic reviews (unstructured text data) generator, TextGen, which is seamlessly integrated with \ac{PDGF}. 
+
+There are a total of 30 queries covering 10 classes from 5 business categories. While these cover the business side well, they also cover 3 technical dimensions – data source, processing type, and analytic technique. Data source coverage is to represent all three – structured, semi-structured, and unstructured data – in the queries. Given that BigBench is a paper and pencil specification, the queries are specified using plain English. While some of these could be implemented efficiently with \ac{SQL} or Hive-QL~\footnote{https://cwiki.apache.org/confluence/display/Hive/LanguageManual} like declarative syntaxes, the others could benefit from a procedural based implementation like MapReduce or a mix of these two approaches. The processing type dimension assures that the queries make a reasonable coverage of these three types. BigBench identifies 3 analytic techniques in answering queries – statistical analysis, data mining, and simple reporting. The analytic technique dimension of BigBench does justice to these 3 techniques by covering them reasonably in the 30 queries. The paper leaves out defining a performance metric for future work, but suggests taking a geometric mean approach as $\sqrt[30]{\prod_{i=1}^{30}P_i}$ where $P_i$ denotes execution time for query $i$. It also presents their experience implementing and running this end-to-end on Teradata Aster \ac{DBMS}. 
+
+In summary, BigBench is in active development at present and provides a good coverage on business related queries over a synthetic dataset. Additionally, plans are set for a \ac{TPC} proposal with its version 2.0 besides being a benchmark on its own. 
+
+\subsection{LinkBench}
+LinkBench~\cite{linkbench} is a benchmark developed at Facebook to evaluate its graph serving capabilities. Note, this evaluates a transactional workload, which is different from a graph processing benchmark like Graph500 that runs an analytic workload. LinkBench is intended to serve as a synthetic benchmark to predict the performance of a database system serving Facebook’s production data, thereby reducing the need to perform costly and time consuming evaluations mirroring real data and requests.
+
+The data model of LinkBench is a social graph where nodes and edges are represented using appropriate structures in the underlying datastore, for example using tables with MySQL. The authors have studied in detail the characteristics of the Facebook’s data when coming up with a data generator that would closely resemble it. 
+
+The workload is also modeled after careful studying of actual social transactions. They consider several factors such as access patterns and distributions, access patterns by data type, graph structure and access patterns, and update characterization in coming up with an operation mix for the benchmark.
+
+The design includes a driver program that generates data and fires up requester threads with the operation mix. The connections to the data store are handled through LinkBench’s graph store implementation, which currently includes support for MySQL back ends. Most of the information for the benchmark is fed through simple configuration file, which makes it easy to adapt for different settings in future.
+
+Primary metrics included in the benchmark are operation latency and mean operation throughput. The other metrics include price/performance, CPU usage, I/O count per second, I/O rate MB/s, resident memory size, and persistent storage size.
+
+\subsection{MineBench}
+MineBench~\cite{minebench} is a benchmark targeted for data mining workloads and presents 15 applications covering 5 categories as shown in Table~\ref{tab:minebench}.
+
+\LTXtable{\textwidth}{tbls/tbl_minebench.tex}
+
+It has been a while since MineBench’s latest release in 2010, but it serves as a good reference for the kind of applications used in data mining. Moreover, these are real world applications and the authors provide OpenMP based parallel versions for most of them. The input data used in these applications come from real and synthetic data sets of varying size classes – small, medium, and large.
+
+A performance characterization of data mining applications using MineBench is studied in~\cite{minebench,minebench2}. The architectural characterization study~\cite{minebench2}, in particular, is interesting for a couple of reasons. First, it justifies the need to introduce a new benchmark system by identifying the diversity of data mining applications. It does so by representing each application as a vector of its performance counters and using K-means clustering to group them. While applications from other benchmarks such as SPEC INT, SPEC FP, MediaBench and TPC-H tend to cluster together, data mining applications falls under multiple clusters. Second, it characterizes the applications based on 1) execution time and scalability, 2) memory hierarchy behavior, and 3) instruction efficiency. While it is expected from any benchmark to have a study of performance and scalability, we find the other two dimensions are equally important and adoptable towards studying big data benchmarks as well.
+
+\subsection{BG Benchmark}
+BG [81] emulates read and write actions performed on a social networking datastore and benchmarks them against a given service level agreement (SLA). These actions originate from interactive social actions like view profile, list friends, view friend requests, etc. BG defines a data model and lists the social actions it benchmarks in detail in [81]. It introduces two metrics to characterize a given datastore as given below.
+	Social Action Rating (SoAR)
+Defines the highest number of completed actions per second agreeing to a given SLA.
+	Socialites
+Defines the highest number of simultaneous threads that issue requests against the datastore and satisfy the given SLA.
+An SLA requires that for some fixed duration 1) a fixed percentage of requests observing latencies equal or less than a given threshold, and 2) the amount of unpredictable data is less than a given threshold. Quantifying unpredictable data is an offline process done through log analysis at the granularity of a social action. 
+
+BG implementation consists of three components – BG coordinator, BG client, and BG visualization deck. There can be multiple clients and they are responsible for data and action generation. The coordinator communicates with clients to instruct on how to generate data and emulate actions based on the given SLA. It also aggregates the results from clients and presents to the visualization deck for presentation.
+
+\subsection{SparkBench: A Comprehensive Benchmarking Suite for in Memory Data Analytic Platform Spark}
+SparkBench is a suite of benchmarks to evaluate the performance of an Apache Spark cluster. Table~\ref{tab:sparkbench} summarizes the workloads in SparkBench.
+
+\LTXtable{\textwidth}{tbls/tbl_sparkbench.tex}
+
+Table~\ref{tab:sparkbenchdatasets} describes the datasets used in SparkBench. 
+
+\LTXtable{\textwidth}{tbls/tbl_sparkbench_data.tex}
+
+SparkBench comes with a data generator that can produce datasets with varying sizes. The reported metrics are job execution time, input data size, and data process rate. A few metrics under development are shuffle data, RDD size, resource consumption. Also, the integration with monitoring tools is in development.
+
+SparkBench is intended for the following purposes.
+\begin{itemize}
+\item Quantitative comparison of different platforms and cluster setups
+\item Quantitative comparison of different Spark configurations and optimizations
+\item Provide guidance when deploying a Spark cluster
+\end{itemize}
+

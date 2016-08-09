@@ -1,0 +1,2186 @@
+@inproceedings{Kiselyov2008:LightweightMonadicRegions,
+ author = {Kiselyov, Oleg and Shan, Chung-chieh},
+ title = {Lightweight Monadic Regions},
+ booktitle = {Proceedings of the First ACM SIGPLAN Symposium on Haskell},
+ series = {Haskell '08},
+ year = {2008},
+ isbn = {978-1-60558-064-7},
+ location = {Victoria, BC, Canada},
+ pages = {1--12},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1411286.1411288},
+ doi = {10.1145/1411286.1411288},
+ acmid = {1411288},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {effect systems, monads, parametric polymorphism, regions, resource management, subtyping, type classes, type systems},
+} 
+
+@article{Fluet2004:MonadicRegions,
+ author = {Fluet, Matthew and Morrisett, Greg},
+ title = {Monadic Regions},
+ journal = {SIGPLAN Not.},
+ issue_date = {September 2004},
+ volume = {39},
+ number = {9},
+ month = sep,
+ year = {2004},
+ issn = {0362-1340},
+ pages = {103--114},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1016848.1016867},
+ doi = {10.1145/1016848.1016867},
+ acmid = {1016867},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {effect, monad, parametric polymorphism, region, region-based memory management, type system},
+}
+
+@inproceedings{Yang2015:CNF,
+ author = {Yang, Edward Z. and Campagna, Giovanni and A\u{g}acan, \"{O}mer S. and El-Hassany, Ahmed and Kulkarni, Abhishek and Newton, Ryan R.},
+ title = {Efficient Communication and Collection with Compact Normal Forms},
+ booktitle = {Proceedings of the 20th ACM SIGPLAN International Conference on Functional Programming},
+ series = {ICFP 2015},
+ year = {2015},
+ isbn = {978-1-4503-3669-7},
+ location = {Vancouver, BC, Canada},
+ pages = {362--374},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/2784731.2784735},
+ doi = {10.1145/2784731.2784735},
+ acmid = {2784735},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Message Passing, Regions, Serialization},
+}
+
+@article{Williams2009:Roofline,
+ author = {Williams, Samuel and Waterman, Andrew and Patterson, David},
+ title = {Roofline: An Insightful Visual Performance Model for Multicore Architectures},
+ journal = {Communications of the {ACM}},
+ issue_date = {April 2009},
+ volume = {52},
+ number = {4},
+ month = apr,
+ year = {2009},
+ issn = {0001-0782},
+ pages = {65--76},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1498765.1498785},
+ doi = {10.1145/1498765.1498785},
+ acmid = {1498785},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@PhdThesis{Orzan2004:PhdThesis,
+  author =       {Simona Orzan},
+  title =        {On Distributed Verification and Verified Distribution},
+  school =       {Free University of Amsterdam},
+  year =         {2004},
+  OPTkey =       {},
+  OPTtype =      {},
+  OPTaddress =   {},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+@article{beamer_direction-optimizing_2013,
+	title = {Direction-{Optimizing} {Breadth}-{First} {Search}},
+	volume = {21},
+	issn = {1058-9244},
+	url = {http://www.hindawi.com/journals/sp/2013/702694/abs/},
+	doi = {10.3233/SPR-130370},
+	abstract = {Breadth-First Search is an important kernel used by many graph-processing applications. In many of these emerging applications of BFS, such as analyzing social networks, the input graphs are low-diameter and scale-free. We propose a hybrid approach that is advantageous for low-diameter graphs, which combines a conventional top-down algorithm along with a novel bottom-up algorithm. The bottom-up algorithm can dramatically reduce the number of edges examined, which in turn accelerates the search as a whole. On a multi-socket server, our hybrid approach demonstrates speedups of 3.3\&\#x2013;7.8 on a range of standard synthetic graphs and speedups of 2.4\&\#x2013;4.6 on graphs from real social networks when compared to a strong baseline. We also typically double the performance of prior leading shared memory (multicore and GPU) implementations.},
+	language = {en},
+	number = {3-4},
+	urldate = {2015-03-26TZ},
+	journal = {Scientific Programming},
+	author = {Beamer, Scott and Asanovi\&\#x107 and Krste and Patterson, David},
+	year = {2013},
+	OPTnote = {Cited by 0083},
+	keywords = {sc15},
+	pages = {137--148}
+}
+
+
+@book{Kepner2011:graph-linalg,
+editor = {Jeremy Kepner and John Gilbert},
+title = {Graph Algorithms in the Language of Linear Algebra},
+publisher = {Society for Industrial and Applied Mathematics},
+year = {2011},
+doi = {10.1137/1.9780898719918},
+address = {},
+edition   = {},
+URL = {http://epubs.siam.org/doi/abs/10.1137/1.9780898719918},
+eprint = {http://epubs.siam.org/doi/pdf/10.1137/1.9780898719918}
+}
+
+
+@inproceedings{hong_accelerating_2011,
+	address = {New York, NY, USA},
+	series = {{PPoPP} '11},
+	title = {Accelerating {CUDA} {Graph} {Algorithms} at {Maximum} {Warp}},
+	isbn = {978-1-4503-0119-0},
+	url = {http://doi.acm.org/10.1145/1941553.1941590},
+	doi = {10.1145/1941553.1941590},
+	abstract = {Graphs are powerful data representations favored in many computational domains. Modern GPUs have recently shown promising results in accelerating computationally challenging graph problems but their performance suffered heavily when the graph structure is highly irregular, as most real-world graphs tend to be. In this study, we first observe that the poor performance is caused by work imbalance and is an artifact of a discrepancy between the GPU programming model and the underlying GPU architecture.We then propose a novel virtual warp-centric programming method that exposes the traits of underlying GPU architectures to users. Our method significantly improves the performance of applications with heavily imbalanced workloads, and enables trade-offs between workload imbalance and ALU underutilization for fine-tuning the performance. Our evaluation reveals that our method exhibits up to 9x speedup over previous GPU algorithms and 12x over single thread CPU execution on irregular graphs. When properly configured, it also yields up to 30\% improvement over previous GPU algorithms on regular graphs. In addition to performance gains on graph algorithms, our programming method achieves 1.3x to 15.1x speedup on a set of GPU benchmark applications. Our study also confirms that the performance gap between GPUs and other multi-threaded CPU graph implementations is primarily due to the large difference in memory bandwidth.},
+	urldate = {2015-04-17TZ},
+	booktitle = {Proceedings of the 16th {ACM} {Symposium} on {Principles} and {Practice} of {Parallel} {Programming}},
+	publisher = {ACM},
+	author = {Hong, Sungpack and Kim, Sang Kyun and Oguntebi, Tayo and Olukotun, Kunle},
+	year = {2011},
+	OPTnote = {00154},
+	keywords = {CUDA, GPGPU, parallel graph algorithms},
+	pages = {267--276}
+}
+
+
+@article{enrico_mastrostefano_efficient_2013,
+	title = {Efficient breadth first search on multi-{GPU} systems},
+	volume = {73},
+	issn = {1096-0848},
+	doi = {10.1016/j.jpdc.2013.05.007},
+	number = {9},
+	journal = {Journal of Parallel and Distributed Computing},
+	author = {Enrico Mastrostefano, Massimo Bernaschi},
+	year = {2013},
+	OPTnote = {00006},
+	pages = {1292--1305}
+}
+
+
+
+@inproceedings{ueno_parallel_2013,
+	title = {Parallel distributed breadth first search on {GPU}},
+	doi = {10.1109/HiPC.2013.6799136},
+	abstract = {In this paper we propose a highly optimized parallel and distributed BFS on GPU for Graph500 benchmark. We evaluate the performance of our implementation using TSUBAME2.0 supercomputer. We achieve 317 GTEPS (billion traversed edges per second) with scale 35 (a large graph with 34.4 billion vertices and 550 billion edges) using 1366 nodes and 4096 GPUs. With this score, TSUBAME2.0 supercomputer is ranked fourth in the ranking list announced in June 2012. We analyze the performance of our implementation and the result shows that inter-node communication limits the performance of our GPU implementation. We also propose SIMD Variable-Length Quantity (VLQ) encoding for compression of communication data with GPU.},
+	booktitle = {2013 20th {International} {Conference} on {High} {Performance} {Computing} ({HiPC})},
+	author = {Ueno, K. and Suzumura, T.},
+	month = dec,
+	year = {2013},
+	OPTnote = {00007},
+	keywords = {Algorithm design and analysis, BFS, Benchmark testing, GPU, GTEPS, Graph500, Graph500 benchmark, Kernel, Partitioning algorithms, SIMD variable-length quantity encoding, Supercomputer, TSUBAME2.0 supercomputer, VLQ encoding, communication data compression, data compression, distributed BFS, encoding, graphics processing units, inter-node communication, parallel BFS, parallel distributed breadth first search, parallel machines, performance evaluation, tree searching, variable length codes},
+	pages = {314--323}
+}
+
+
+@inproceedings{merrill_scalable_2012,
+	series = {{PPoPP} '12},
+	title = {Scalable {GPU} graph traversal},
+	isbn = {978-1-4503-1160-1},
+	url = {http://dl.acm.org/citation.cfm?id=2145832},
+	doi = {10.1145/2145816.2145832},
+	urldate = {2015-04-08TZ},
+	booktitle = {Proceedings of the 17th {ACM} {SIGPLAN} {Symposium} on {Principles} and {Practice} of {Parallel} {Programming}},
+	publisher = {ACM},
+	author = {Merrill, Duane and Garland, Michael and Grimshaw, Andrew},
+	year = {2012},
+	pages = {117--128}
+}
+
+@inproceedings{ueno_highly_2012,
+	title = {Highly scalable graph search for the graph500 benchmark},
+	url = {http://dl.acm.org/citation.cfm?id=2287104},
+	urldate = {2015-04-08TZ},
+	booktitle = {Proceedings of the 21st international symposium on {High}-{Performance} {Parallel} and {Distributed} {Computing}},
+	publisher = {ACM},
+	author = {Ueno, Koji and Suzumura, Toyotaro},
+	year = {2012},
+	pages = {149--160}
+}
+
+@inproceedings{harish_accelerating_2007,
+	address = {Berlin, Heidelberg},
+	series = {{HiPC}'07},
+	title = {Accelerating {Large} {Graph} {Algorithms} on the {GPU} {Using} {CUDA}},
+	isbn = {3-540-77219-7, 978-3-540-77219-4},
+	url = {http://dl.acm.org/citation.cfm?id=1782174.1782200},
+	abstract = {Large graphs involving millions of vertices are common in many practical applications and are challenging to process. Practical-time implementations using high-end computers are reported but are accessible only to a few. Graphics Processing Units (GPUs) of today have high computation power and low price. They have a restrictive programming model and are tricky to use. The G80 line of Nvidia GPUs can be treated as a SIMD processor array using the CUDA programming model. We present a few fundamental algorithms - including breadth first search, single source shortest path, and all-pairs shortest path - using CUDA on large graphs. We can compute the single source shortest path on a 10 million vertex graph in 1.5 seconds using the Nvidia 8800GTX GPU costing \$600. In some cases optimal sequential algorithm is not the fastest on the GPU architecture. GPUs have great potential as high-performance co-processors.},
+	urldate = {2015-04-17TZ},
+	booktitle = {Proceedings of the 14th {International} {Conference} on {High} {Performance} {Computing}},
+	publisher = {Springer-Verlag},
+	author = {Harish, Pawan and Narayanan, P. J.},
+	year = {2007},
+	OPTnote = {00456},
+	pages = {197--208}
+}
+
+
+@InProceedings{Zhang2015:BFS-dynapar,
+  author =       {Peter Zhang and Eric Holk and John Matty and Samantha Misurda and Marcin Zalewski and Scott McMillan and Jonathan Chu and Andrew Lumsdaine},
+  title =        {Dynamic Parallelism for Simple and Efficient {GPU} Graph Algorithms},
+  OPTcrossref =  {},
+  OPTkey =       {},
+  booktitle = {5th Workshop on Irregular Applications:
+Architectures and Algorithms (IA$^3$)},
+  year =      {2015},
+  OPTeditor =    {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTseries =    {},
+  OPTpages =     {},
+  month =     nov,
+  OPTaddress =   {},
+  OPTorganization = {},
+  OPTpublisher = {},
+  note =      {To Appear},
+  OPTannote =    {}
+}
+
+@incollection{Pharr2010:KD-tree-book,
+title = "Chapter Four - Primitives and Intersection Acceleration ",
+editor = "Humphreys, Matt PharrGreg ",
+booktitle = "Physically Based Rendering (Second Edition) ",
+publisher = "Morgan Kaufmann",
+edition = "Second Edition",
+address = "Boston",
+year = "2010",
+pages = "182 - 258",
+isbn = "978-0-12-375079-2",
+doi = "http://dx.doi.org/10.1016/B978-0-12-375079-2.50004-4",
+url = "http://www.sciencedirect.com/science/article/pii/B9780123750792500044",
+author = "Matt Pharr and Greg Humphreys",
+}
+
+@Misc{Harris2015:Cuda7Features,
+  OPTkey =       {},
+  author =    {Mark Harris},
+  title =     {{CUDA} 7 Release Candidate Feature Overview: {C++11}, New Libraries, and More},
+  howpublished = {\url{http://devblogs.nvidia.com/parallelforall/cuda-7-release-candidate-feature-overview/}},
+  month =     jan,
+  year =      {2015},
+  note =      {Accessed: November 3, 2015},
+  OPTannote =    {}
+}
+
+@Misc{K40-Stats,
+author={NVIDIA Corporation},
+title = {Tesla K40 and K80 GPU Accelerators for Servers},
+howpublished={\url{http://web.archive.org/web/20151104151402/http://www.nvidia.com/object/tesla-servers.html}},
+year = {2015},
+note = {Accessed: November 4, 2015}
+}
+
+@inproceedings{Owens2005:GPGPU-Survey,
+    author = {Owens, John D. and Luebke, David and Govindaraju, Naga and Harris, Mark and Kr\"{u}ger, Jens and Lefohn, Aaron E. and Purcell, Tim},
+    booktitle = {Eurographics 2005, State of the Art Reports},
+    citeulike-article-id = {898522},
+    keywords = {computation, gpgpu},
+    month = sep,
+    pages = {21--51},
+    posted-at = {2006-10-15 22:21:35},
+    priority = {0},
+    title = {{A Survey of General-Purpose Computation on Graphics Hardware}},
+    year = {2005}
+}
+
+
+
+@inproceedings{Larsen2001:GpuMatMul,
+ author = {Larsen, E. Scott and McAllister, David},
+ title = {Fast Matrix Multiplies Using Graphics Hardware},
+ booktitle = {Proceedings of the 2001 ACM/IEEE Conference on Supercomputing},
+ series = {SC '01},
+ year = {2001},
+ isbn = {1-58113-293-X},
+ location = {Denver, Colorado},
+ pages = {55--55},
+ numpages = {1},
+ url = {http://doi.acm.org/10.1145/582034.582089},
+ doi = {10.1145/582034.582089},
+ acmid = {582089},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {graphics hardware, matrix multiplication},
+} 
+
+
+@inproceedings{Reynolds2002:SepLogic,
+ author = {Reynolds, John C.},
+ title = {Separation Logic: A Logic for Shared Mutable Data Structures},
+ booktitle = {Proceedings of the 17th Annual IEEE Symposium on Logic in Computer Science},
+ series = {LICS '02},
+ year = {2002},
+ isbn = {0-7695-1483-9},
+ pages = {55--74},
+ numpages = {20},
+ url = {http://dl.acm.org/citation.cfm?id=645683.664578},
+ acmid = {664578},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+} 
+
+@TechReport{Vasquez2009:SpMV,
+  author =       {F. Vasquez and E. M. Garzon and J. A. Martinez and J.J.Fernandez},
+  title =        {The sparse matrix vector product on {GPUs}},
+  institution =  {University of Almeria},
+  year =         {2009},
+  OPTkey =       {},
+  OPTtype =      {},
+  OPTnumber =    {},
+  OPTaddress =   {},
+  month =        {jun},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+@inproceedings{Silberstein2008:Sum-Products,
+ author = {Silberstein, Mark and Schuster, Assaf and Geiger, Dan and Patney, Anjul and Owens, John D.},
+ title = {Efficient Computation of Sum-products on GPUs Through Software-managed Cache},
+ booktitle = {Proceedings of the 22Nd Annual International Conference on Supercomputing},
+ series = {ICS '08},
+ year = {2008},
+ isbn = {978-1-60558-158-3},
+ location = {Island of Kos, Greece},
+ pages = {309--318},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1375527.1375572},
+ doi = {10.1145/1375527.1375572},
+ acmid = {1375572},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {CUDA, GPGPU, software-managed cache, sum-product},
+} 
+
+@Inproceedings {Govindaraju2008:GPU-FFT,
+OPTabstract     = {<p>We present novel algorithms for computing discrete Fourier transforms with
+                high performance on GPUs. We present hierarchical, mixed radix FFT algorithms for
+                both power-of-two and non-power-of-two sizes. Our hierarchical FFT algorithms
+                efficiently exploit shared memory on GPUs using a Stockham formulation. We reduce
+                the memory transpose overheads in hierarchical algorithms by combining the
+                transposes into a block-based multi-FFT algorithm. For non-power-of-two sizes, we
+                use a combination of mixed radix FFTs of small primes and Bluestein’s algorithm.
+                We use modular arithmetic in Bluestein’s algorithm to improve the accuracy. We
+                implemented our algorithms using the NVIDIA CUDA API and compared their
+                performance with NVIDIA’s CUFFT library and an optimized CPU-implementation
+                (Intel’s MKL) on a high-end quad-core CPU. On an NVIDIA GPU, we obtained
+                performance of up to 300 GFlops, with typical performance improvements of 2–4x
+                over CUFFT and 8–40x improvement over MKL for large sizes.</p>},
+author       = {Naga K. Govindaraju and Brandon Lloyd and Yuri Dotsenko and Burton Smith and John
+                Manferdelli},
+booktitle    = {Proceedings of the 2008 ACM/IEEE conference on Supercomputing},
+note         = {This is a revision of the original paper that corrects a few typos.},
+publisher    = {IEEE},
+title        = {High Performance Discrete Fourier Transforms on Graphics Processors},
+url          = {http://research.microsoft.com/apps/pubs/default.aspx?id=131400},
+year         = {2008},
+}
+
+
+@inproceedings{Lee2010:100xMyth,
+ author = {Lee, Victor W. and Kim, Changkyu and Chhugani, Jatin and Deisher, Michael and Kim, Daehyun and Nguyen, Anthony D. and Satish, Nadathur and Smelyanskiy, Mikhail and Chennupaty, Srinivas and Hammarlund, Per and Singhal, Ronak and Dubey, Pradeep},
+ title = {Debunking the 100X {GPU} vs. {CPU} Myth: An Evaluation of Throughput Computing on {CPU} and {GPU}},
+ booktitle = {Proceedings of the 37th Annual International Symposium on Computer Architecture},
+ series = {ISCA '10},
+ year = {2010},
+ isbn = {978-1-4503-0053-7},
+ location = {Saint-Malo, France},
+ pages = {451--460},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1815961.1816021},
+ doi = {10.1145/1815961.1816021},
+ acmid = {1816021},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cpu architecture, gpu architecture, performance analysis, performance measurement, software optimization, throughput computing},
+} 
+
+@inproceedings{Pfenning1988:HOAS,
+ author = {Pfenning, F. and Elliott, C.},
+ title = {Higher-order Abstract Syntax},
+ booktitle = {Proceedings of the ACM SIGPLAN 1988 Conference on Programming Language Design and Implementation},
+ series = {PLDI '88},
+ year = {1988},
+ isbn = {0-89791-269-1},
+ location = {Atlanta, Georgia, USA},
+ pages = {199--208},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/53990.54010},
+ doi = {10.1145/53990.54010},
+ acmid = {54010},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{Charguéraud2012:locally-nameless,
+year={2012},
+issn={0168-7433},
+journal={Journal of Automated Reasoning},
+volume={49},
+number={3},
+doi={10.1007/s10817-011-9225-2},
+title={The Locally Nameless Representation},
+url={http://dx.doi.org/10.1007/s10817-011-9225-2},
+publisher={Springer Netherlands},
+keywords={Locally nameless; Cofinite quantification; Formal proofs; Binders; Metatheory},
+author={Charguéraud, Arthur},
+pages={363-408},
+language={English}
+}
+
+
+@inproceedings{Voufo2014:Cpp-naming,
+ author = {Voufo, Larisse and Zalewski, Marcin and Lumsdaine, Andrew},
+ title = {Scoping Rules on a Platter: A Framework for Understanding and Specifying Name Binding},
+ booktitle = {Proceedings of the 10th ACM SIGPLAN Workshop on Generic Programming},
+ series = {WGP '14},
+ year = {2014},
+ isbn = {978-1-4503-3042-8},
+ location = {Gothenburg, Sweden},
+ pages = {59--70},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2633628.2633633},
+ doi = {10.1145/2633628.2633633},
+ acmid = {2633633},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {c++, combinators, concepts, name binding, name lookup, name resolution, scoping rules},
+}
+
+@Manual{Coq:manual,
+  title =        {The Coq proof assistant reference manual},
+  author =       {\mbox{The Coq development team}},
+  organization = {LogiCal Project},
+  note =         {Version 8.0},
+  year =         {2004},
+  url =          {http://coq.inria.fr}
+}
+
+@inproceedings{Beazley1996:SWIG,
+ author = {Beazley, David M.},
+ title = {SWIG: An Easy to Use Tool for Integrating Scripting Languages with C and C++},
+ booktitle = {Proceedings of the 4th Conference on USENIX Tcl/Tk Workshop, 1996 - Volume 4},
+ series = {TCLTK'96},
+ year = {1996},
+ location = {Monterey, California},
+ pages = {15--15},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=1267498.1267513},
+ acmid = {1267513},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+
+@TechReport{Plotkin1981:OpSem,
+  author =       {Gordon D. Plotkin},
+  title =        {A Structural Approach to Operational Semantics},
+  institution =  {Computer Science Department, Aarhus University},
+  year =         {1981},
+  OPTkey =       {},
+  OPTtype =      {},
+  number =       {DAIMI FN-19},
+  address =      {Aarhus, Denmark},
+  OPTmonth =     {},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+@techreport{plt-tr1,
+  title       = {Reference: Racket},
+  author      = {Matthew Flatt and PLT},
+  number      = {PLT-TR-2010-1},
+  institution = {PLT Design Inc.},
+  year        = {2010},
+  note        = {\url{http://racket-lang.org/tr1/}}
+}
+
+@inproceedings{Hagino1987:STLC,
+  title={A typed lambda calculus with categorical type constructors},
+  author={Hagino, Tatsuya},
+  booktitle={Category theory and computer science},
+  pages={140--157},
+  year={1987},
+  organization={Springer}
+}
+
+@article{r4rs,
+ author = {Abelson, H. and Dybvig, R. K. and Haynes, C. T. and Rozas, G. J. and Adams,IV, N. I. and Friedman, D. P. and Kohlbecker, E. and Steele,Jr., G. L. and Bartley, D. H. and Halstead, R. and Oxley, D. and Sussman, G. J. and Brooks, G. and Hanson, C. and Pitman, K. M. and Wand, M.},
+ editor = {Clinger, William and Rees, Jonathan},
+ title = {Revised$^4$ Report on the Algorithmic Language Scheme},
+ journal = {SIGPLAN Lisp Pointers},
+ issue_date = {July, 1991},
+ volume = {IV},
+ number = {3},
+ month = jul,
+ year = {1991},
+ issn = {1045-3563},
+ pages = {1--55},
+ numpages = {55},
+ url = {http://doi.acm.org/10.1145/382130.382133},
+ doi = {10.1145/382130.382133},
+ acmid = {382133},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@inproceedings{Bergstrom2012:NESL-GPU,
+ author = {Bergstrom, Lars and Reppy, John},
+ title = {Nested data-parallelism on the gpu},
+ booktitle = {Proceedings of the 17th ACM SIGPLAN international conference on Functional programming},
+ series = {ICFP '12},
+ year = {2012},
+ isbn = {978-1-4503-1054-3},
+ location = {Copenhagen, Denmark},
+ pages = {247--258},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2364527.2364563},
+ doi = {10.1145/2364527.2364563},
+ acmid = {2364563},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {gpgpu, gpu, nesl, nested data parallelism},
+} 
+
+@inproceedings{Parker2010:OptiX,
+ author = {Parker, Steven G. and Bigler, James and Dietrich, Andreas and Friedrich, Heiko and Hoberock, Jared and Luebke, David and McAllister, David and McGuire, Morgan and Morley, Keith and Robison, Austin and Stich, Martin},
+ title = {OptiX: a general purpose ray tracing engine},
+ booktitle = {ACM SIGGRAPH 2010 papers},
+ series = {SIGGRAPH '10},
+ year = {2010},
+ isbn = {978-1-4503-0210-4},
+ location = {Los Angeles, California},
+ pages = {66:1--66:13},
+ articleno = {66},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/1833349.1778803},
+ doi = {10.1145/1833349.1778803},
+ acmid = {1778803},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {graphics hardware, graphics systems, ray tracing},
+} 
+
+@inproceedings{Yang2009:GPU-Recursion,
+ author = {Yang, Ke and He, Bingsheng and Luo, Qiong and Sander, Pedro V. and Shi, Jiaoying},
+ title = {Stack-based parallel recursion on graphics processors},
+ booktitle = {Proceedings of the 14th ACM SIGPLAN symposium on Principles and practice of parallel programming},
+ series = {PPoPP '09},
+ year = {2009},
+ isbn = {978-1-60558-397-6},
+ location = {Raleigh, NC, USA},
+ pages = {299--300},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/1504176.1504224},
+ doi = {10.1145/1504176.1504224},
+ acmid = {1504224},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {graphics processors, parallel, recursion, stack},
+} 
+
+@inproceedings{Bergstrom2010:LTS,
+ author = {Bergstrom, Lars and Rainey, Mike and Reppy, John and Shaw, Adam and Fluet, Matthew},
+ title = {Lazy tree splitting},
+ booktitle = {Proceedings of the 15th ACM SIGPLAN international conference on Functional programming},
+ series = {ICFP '10},
+ year = {2010},
+ isbn = {978-1-60558-794-3},
+ location = {Baltimore, Maryland, USA},
+ pages = {93--104},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1863543.1863558},
+ doi = {10.1145/1863543.1863558},
+ acmid = {1863558},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {compilers, nested-data-parallel languages, run-time systems, scheduling},
+} 
+
+@inproceedings{Bauer2012:Legion,
+ author = {Bauer, Michael and Treichler, Sean and Slaughter, Elliott and Aiken, Alex},
+ title = {Legion: expressing locality and independence with logical regions},
+ booktitle = {Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis},
+ series = {SC '12},
+ year = {2012},
+ isbn = {978-1-4673-0804-5},
+ location = {Salt Lake City, Utah},
+ pages = {66:1--66:11},
+ articleno = {66},
+ numpages = {11},
+ url = {http://dl.acm.org/citation.cfm?id=2388996.2389086},
+ acmid = {2389086},
+ publisher = {IEEE Computer Society Press},
+ address = {Los Alamitos, CA, USA},
+} 
+
+@inproceedings{Jablin2011:CPU-GPU,
+ author = {Jablin, Thomas B. and Prabhu, Prakash and Jablin, James A. and Johnson, Nick P. and Beard, Stephen R. and August, David I.},
+ title = {Automatic {CPU-GPU} communication management and optimization},
+ booktitle = {Proceedings of the 32nd ACM SIGPLAN conference on Programming language design and implementation},
+ series = {PLDI '11},
+ year = {2011},
+ isbn = {978-1-4503-0663-8},
+ location = {San Jose, California, USA},
+ pages = {142--151},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1993498.1993516},
+ doi = {10.1145/1993498.1993516},
+ acmid = {1993516},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {communication, gpu, management, optimization},
+} 
+
+@inproceedings{Lee2009:OpenMP-GPGPU,
+ author = {Lee, Seyong and Min, Seung-Jai and Eigenmann, Rudolf},
+ title = {{OpenMP to GPGPU}: a compiler framework for automatic translation and optimization},
+ booktitle = {Proceedings of the 14th ACM SIGPLAN symposium on Principles and practice of parallel programming},
+ series = {PPoPP '09},
+ year = {2009},
+ isbn = {978-1-60558-397-6},
+ location = {Raleigh, NC, USA},
+ pages = {101--110},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1504176.1504194},
+ doi = {10.1145/1504176.1504194},
+ acmid = {1504194},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {automatic translation, compiler optimization, cuda, gpu, openmp},
+}
+
+@InProceedings{Holk11:Harlan,
+Title = {Declarative Parallel Programming for {GPUs}},
+Author = {Eric Holk and William Byrd and Nilesh Mahajan and Jeremiah Willcock and Arun Chauhan and Andrew Lumsdaine},
+Booktitle = {Proceedings of the International Conference on Parallel Computing (ParCo)},
+month = sep,
+Year = {2011},
+}
+
+@inproceedings{Holk13:RustGPU,
+  title = {{GPU} Programming in {Rust}: Implementing High-Level
+                  Abstractions in a Systems-level Language},
+  author = {Eric Holk and Milinda Pathirage and Arun Chauhan and
+                  Andrew Lumsdaine and Nicholas D. Matsakis},
+  booktitle = {Proceedings of the 18th International Workshop on
+                  High-Level Parallel Programming Models and
+                  Supportive Environments},
+  month = may,
+  year = {2013},
+}
+
+@inproceedings{Holk14:HarlanRBMM,
+ author = {Holk, Eric and Newton, Ryan and Siek, Jeremy and Lumsdaine, Andrew},
+ title = {Region-based Memory Management for {GPU} Programming Languages: Enabling Rich Data Structures on a Spartan Host},
+ booktitle = {Proceedings of the 2014 ACM International Conference on Object Oriented Programming Systems Languages \&\#38; Applications},
+ series = {OOPSLA '14},
+ year = {2014},
+ isbn = {978-1-4503-2585-1},
+ location = {Portland, Oregon, USA},
+ pages = {141--155},
+ numpages = {15},
+ url = {http://doi.acm.org/10.1145/2660193.2660244},
+ doi = {10.1145/2660193.2660244},
+ acmid = {2660244},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {algebraic data types, compilers, first class procedures, gpu, harlan, implementation, opencl, optimization, parallel programming, performance, recursion},
+} 
+
+@Manual{2012-manual-cuda,
+ Month = oct,
+ Year = {2012},
+ Title = {{CUDA} {C} Programming Guide},
+ Organization = {NVIDIA},
+ Author = {NVIDIA},
+ Note = {\url{http://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf}}
+}
+
+@Manual{opencl-12-spec,
+ Month = nov,
+ Year = {2012},
+ Organization = {Khronos OpenCL Working Group},
+ Author = {{Khronos OpenCL Working Group}},
+ Title = {The OpenCL Specification},
+ Note = {\url{http://www.khronos.org/registry/cl/specs/opencl-1.2.pdf}}
+}
+
+@article{Tofte97:Regions,
+title = {Region-Based Memory Management},
+journal = {Information and Computation},
+volume = {132},
+number = {2},
+pages = {109 - 176},
+year = {1997},
+note = {},
+issn = {0890-5401},
+doi = {10.1006/inco.1996.2613},
+url = {http://www.sciencedirect.com/science/article/pii/S0890540196926139},
+author = {Mads Tofte and Jean-Pierre Talpin}
+}
+
+@inproceedings{Grossman02:Cyclone,
+ author = {Grossman, Dan and Morrisett, Greg and Jim, Trevor and Hicks, Michael and Wang, Yanling and Cheney, James},
+ title = {Region-based memory management in {Cyclone}},
+ booktitle = {Proceedings of the ACM SIGPLAN 2002 Conference on Programming language design and implementation},
+ series = {PLDI '02},
+ year = {2002},
+ isbn = {1-58113-463-0},
+ location = {Berlin, Germany},
+ pages = {282--293},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/512529.512563},
+ doi = {10.1145/512529.512563},
+ acmid = {512563},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@Misc{rust,
+  OPTkey =       {rust},
+  author =    {Mozilla},
+  title =     {The {Rust} Programming Language},
+  howpublished = {\url{http://www.rust-lang.org/}},
+  OPTmonth =     {},
+  year =      {2013},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+@inproceedings{Catanzaro11:Copperhead,
+  author    = {Bryan C. Catanzaro and
+               Michael Garland and
+               Kurt Keutzer},
+  title     = {Copperhead: compiling an embedded data parallel language},
+  booktitle = {PPOPP},
+  year      = {2011},
+  pages     = {47-56},
+  ee        = {http://doi.acm.org/10.1145/1941553.1941562},
+  crossref  = {DBLP:conf/ppopp/2011},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Chakravarty11:Accelerate,
+ author = {Chakravarty, Manuel M.T. and Keller, Gabriele and Lee, Sean and McDonell, Trevor L. and Grover, Vinod},
+ title = {Accelerating {Haskell} array codes with multicore {GPU}s},
+ booktitle = {Proceedings of the sixth workshop on Declarative aspects of multicore programming},
+ series = {DAMP '11},
+ year = {2011},
+ isbn = {978-1-4503-0486-3},
+ location = {Austin, Texas, USA},
+ pages = {3--14},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1926354.1926358},
+ doi = {http://doi.acm.org/10.1145/1926354.1926358},
+ acmid = {1926358},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {arrays, data parallelism, dynamic compilation, gpgpu, haskell, skeletons},
+}
+
+@proceedings{DBLP:conf/ppopp/2011,
+  editor    = {Calin Cascaval and
+               Pen-Chung Yew},
+  title     = {Proceedings of the 16th ACM SIGPLAN Symposium on Principles
+               and Practice of Parallel Programming, PPOPP 2011, San Antonio,
+               TX, USA, February 12-16, 2011},
+  booktitle = {PPOPP},
+  publisher = {ACM},
+  year      = {2011},
+  isbn      = {978-1-4503-0119-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@book{Blelloch90:ScanVector,
+  title={Vector models for data-parallel computing},
+  author={Blelloch, Guy E},
+  volume={75},
+  year={1990},
+  publisher={MIT press Cambridge}
+}
+
+@article{Hathhorn2012:Formal,
+  title={Formal Semantics of Heterogeneous {CUDA-C}: A Modular Approach with Applications},
+  author={Hathhorn, Chris and Becchi, Michela and Harrison, William L and Procter, Adam},
+  journal={arXiv preprint arXiv:1211.6193},
+  year={2012}
+}
+
+@TechReport{Rosu2006:K,
+author = {Grigore Ro\c{s}u},
+title = "{K: a Rewrite-based Framework for Modular Language Design, Semantics, Analysis and Implementation}",
+institution = {Computer Science Department, University of Illinois at Urbana-Champaign},
+Number = {UIUCDCS-R-2006-2802},
+Year       = {2006}
+}
+
+@phdthesis{Ellison2012:Thesis,
+  author={Chucky Ellison},
+  title={A Formal Semantics of {C} with Applications},
+  school={University of Illinois},
+  year={2012},
+  month={July},
+}
+
+@inproceedings{Buck2004:Brook,
+ author = {Buck, Ian and Foley, Tim and Horn, Daniel and Sugerman, Jeremy and Fatahalian, Kayvon and Houston, Mike and Hanrahan, Pat},
+ title = {Brook for GPUs: stream computing on graphics hardware},
+ booktitle = {ACM SIGGRAPH 2004 Papers},
+ series = {SIGGRAPH '04},
+ year = {2004},
+ location = {Los Angeles, California},
+ pages = {777--786},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1186562.1015800},
+ doi = {10.1145/1186562.1015800},
+ acmid = {1015800},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Data Parallel Computing, GPU Computing, Brook, Programmable Graphics Hardware, Stream Computing},
+} 
+
+@inproceedings{McDonell2013:OptimizingAccelerate,
+ author = {McDonell, Trevor L. and Chakravarty, Manuel M.T. and Keller, Gabriele and Lippmeier, Ben},
+ title = {Optimising purely functional {GPU} programs},
+ booktitle = {Proceedings of the 18th {ACM SIGPLAN} international conference on Functional programming},
+ series = {{ICFP} '13},
+ year = {2013},
+ isbn = {978-1-4503-2326-0},
+ location = {Boston, Massachusetts, USA},
+ pages = {49--60},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2500365.2500595},
+ doi = {10.1145/2500365.2500595},
+ acmid = {2500595},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {array fusion, arrays, data parallelism, dynamic compilation, embedded language, gpgpu, haskell, sharing recovery},
+} 
+
+@inproceedings{Tang2011:Pochoir,
+ author = {Tang, Yuan and Chowdhury, Rezaul Alam and Kuszmaul, Bradley C. and Luk, Chi-Keung and Leiserson, Charles E.},
+ title = {The {Pochoir} stencil compiler},
+ booktitle = {Proceedings of the 23rd ACM symposium on Parallelism in algorithms and architectures},
+ series = {SPAA '11},
+ year = {2011},
+ isbn = {978-1-4503-0743-7},
+ location = {San Jose, California, USA},
+ pages = {117--128},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1989493.1989508},
+ doi = {10.1145/1989493.1989508},
+ acmid = {1989508},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {C++, cache-oblivious algorithm, cilk, compiler, embedded domain-specific language, multicore, parallel computation, stencil computation, trapezoidal decomposition},
+} 
+
+@inproceedings{Reynolds1972:Definitional,
+ author = {Reynolds, John C.},
+ title = {Definitional Interpreters for Higher-order Programming Languages},
+ booktitle = {Proceedings of the ACM Annual Conference - Volume 2},
+ series = {ACM '72},
+ year = {1972},
+ location = {Boston, Massachusetts, USA},
+ pages = {717--740},
+ numpages = {24},
+ url = {http://doi.acm.org/10.1145/800194.805852},
+ doi = {10.1145/800194.805852},
+ acmid = {805852},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Applicative language, Closure, Continuation, GEDANKEN, Higher-order function, Interpreter, J-operator, LISP, Lambda calculus, Language definition, Order of application, PAL, Programming language, Reference, SECD machine},
+} 
+
+@article{McLendonIII2005:SCC-distrib,
+ author = {McLendon III, William and Hendrickson, Bruce and Plimpton, Steven J. and Rauchwerger, Lawrence},
+ title = {Finding Strongly Connected Components in Distributed Graphs},
+ journal = {J. Parallel Distrib. Comput.},
+ issue_date = {August 2005},
+ volume = {65},
+ number = {8},
+ month = aug,
+ year = {2005},
+ issn = {0743-7315},
+ pages = {901--910},
+ numpages = {10},
+ url = {http://dx.doi.org/10.1016/j.jpdc.2005.03.007},
+ doi = {10.1016/j.jpdc.2005.03.007},
+ acmid = {1096270},
+ publisher = {Academic Press, Inc.},
+ address = {Orlando, FL, USA},
+ keywords = {Graph algorithm, Parallel computing, Strongly connected components},
+}
+
+@inproceedings{Greiner1994:ParallelSCCSurvey,
+ author = {Greiner, John},
+ title = {A Comparison of Parallel Algorithms for Connected Components},
+ booktitle = {Proceedings of the Sixth Annual ACM Symposium on Parallel Algorithms and Architectures},
+ series = {SPAA '94},
+ year = {1994},
+ isbn = {0-89791-671-9},
+ location = {Cape May, New Jersey, USA},
+ pages = {16--25},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/181014.181021},
+ doi = {10.1145/181014.181021},
+ acmid = {181021},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{Shiloach1982:ParallelConnectivy,
+title = "An ${O}(\log n)$ parallel connectivity algorithm ",
+journal = "Journal of Algorithms ",
+volume = "3",
+number = "1",
+pages = "57 - 67",
+year = "1982",
+note = "",
+issn = "0196-6774",
+doi = "http://dx.doi.org/10.1016/0196-6774(82)90008-6",
+url = "http://www.sciencedirect.com/science/article/pii/0196677482900086",
+author = "Yossi Shiloach and Uzi Vishkin"
+}
+
+@inproceedings{Schudy2008:ParallelSCC,
+ author = {Schudy, Warren},
+ title = {Finding Strongly Connected Components in Parallel Using ${O}(\log^2 n)$ Reachability Queries},
+ booktitle = {Proceedings of the Twentieth Annual Symposium on Parallelism in Algorithms and Architectures},
+ series = {SPAA '08},
+ year = {2008},
+ isbn = {978-1-59593-973-9},
+ location = {Munich, Germany},
+ pages = {146--151},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/1378533.1378560},
+ doi = {10.1145/1378533.1378560},
+ acmid = {1378560},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {graph algorithms, parallel algorithms, strongly connected components, topological sort, transitive closure bottleneck},
+} 
+
+@TechReport{Hong2013:ParallelSCC,
+  author = 		 {Sungpack Hong and Nicole C. Rodia and Kunle Olukotun},
+  title = 		 {On Fast Parallel Detection of Strongly Connected
+                  Components ({SCC}) in Small-World Graphs},
+  institution =  {Stanford University},
+  year = 		 {2013},
+  OPTkey = 		 {},
+  OPTtype = 	 {},
+  OPTnumber = 	 {},
+  OPTaddress = 	 {},
+  month = 	 {mar},
+  OPTnote = 	 {},
+  OPTannote = 	 {}
+}
+
+@INPROCEEDINGS{Bernaschi2012:BFS-APEnet+,
+author={Bernaschi, M. and Bisson, M. and Mastrostefano, E. and Rossetti, D.},
+booktitle={High Performance Computing, Networking, Storage and Analysis (SCC), 2012 SC Companion:},
+title={Breadth First Search on {APEnet+}},
+year={2012},
+pages={248-253},
+keywords={graph theory;graphics processing units;multiprocessor interconnection networks;peer-to-peer computing;peripheral interfaces;system buses;tree searching;APEnet+;GPU hosts;GPU memory;NVIDIA GPUDirect peer-to-peer communication;PCI express 2012 bus;breadth first search algorithm;custom interconnection network;graphs;multiGPU code;third party device;BFS;CUDA;GPU;P2P;RDMA;graph500;networking},
+doi={10.1109/SC.Companion.2012.41},
+}
+
+@inproceedings{Harish2007:Graph-CUDA,
+ author = {Harish, Pawan and Narayanan, P. J.},
+ title = {Accelerating Large Graph Algorithms on the {GPU} Using {CUDA}},
+ booktitle = {Proceedings of the 14th International Conference on High Performance Computing},
+ series = {HiPC'07},
+ year = {2007},
+ isbn = {3-540-77219-7, 978-3-540-77219-4},
+ location = {Goa, India},
+ pages = {197--208},
+ numpages = {12},
+ url = {http://dl.acm.org/citation.cfm?id=1782174.1782200},
+ acmid = {1782200},
+ publisher = {Springer-Verlag},
+ address = {Berlin, Heidelberg},
+} 
+
+@inproceedings{Hong2011:GraphMaximumWarp,
+ author = {Hong, Sungpack and Kim, Sang Kyun and Oguntebi, Tayo and Olukotun, Kunle},
+ title = {Accelerating {CUDA} Graph Algorithms at Maximum Warp},
+ booktitle = {Proceedings of the 16th ACM Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '11},
+ year = {2011},
+ isbn = {978-1-4503-0119-0},
+ location = {San Antonio, TX, USA},
+ pages = {267--276},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1941553.1941590},
+ doi = {10.1145/1941553.1941590},
+ acmid = {1941590},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cuda, gpgpu, parallel graph algorithms},
+} 
+
+@inproceedings{Jones2009:ParWeb,
+ author = {Jones, Christopher Grant and Liu, Rose and Meyerovich, Leo and Asanovi\'{c}, Krste and Bod\'{\i}k, Rastislav},
+ title = {Parallelizing the Web Browser},
+ booktitle = {Proceedings of the First USENIX Conference on Hot Topics in Parallelism},
+ series = {HotPar'09},
+ year = {2009},
+ location = {Berkeley, California},
+ pages = {7--7},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=1855591.1855598},
+ acmid = {1855598},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@inproceedings{Meyerovich2010:ParWeb,
+ author = {Meyerovich, Leo A. and Bodik, Rastislav},
+ title = {Fast and Parallel Webpage Layout},
+ booktitle = {Proceedings of the 19th International Conference on World Wide Web},
+ series = {WWW '10},
+ year = {2010},
+ isbn = {978-1-60558-799-8},
+ location = {Raleigh, North Carolina, USA},
+ pages = {711--720},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/1772690.1772763},
+ doi = {10.1145/1772690.1772763},
+ acmid = {1772763},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {attribute grammar, box model, css, font, html, layout, mobile, multicore, selector},
+} 
+
+@inproceedings{Cascaval2013:Zoomm,
+ author = {Cascaval, Calin and Fowler, Seth and Montesinos-Ortego, Pablo and Piekarski, Wayne and Reshadi, Mehrdad and Robatmili, Behnam and Weber, Michael and Bhavsar, Vrajesh},
+ title = {ZOOMM: A Parallel Web Browser Engine for Multicore Mobile Devices},
+ booktitle = {Proceedings of the 18th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+ series = {PPoPP '13},
+ year = {2013},
+ isbn = {978-1-4503-1922-5},
+ location = {Shenzhen, China},
+ pages = {271--280},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/2442516.2442543},
+ doi = {10.1145/2442516.2442543},
+ acmid = {2442543},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {mobile multicore, parallel browser},
+} 
+
+@article{Flanagan1999:Future,
+  title={The semantics of future and an application},
+  author={Flanagan, C. and Felleisen, M.},
+  journal={Journal of Functional Programming},
+  volume={9},
+  number={01},
+  pages={1--31},
+  year={1999},
+  publisher={Cambridge Univ Press}
+}
+
+@techreport{Habermaier2011:PTX-Semantics,
+  author    = {Axel Habermaier},
+  title     = {The Model of Computation of {CUDA} and its Formal Semantics},
+  institution = {Informatik},
+  series    = {Reports / Technische Berichte - Herausgeber: Fakult{\"a}t f{\"u}r Angewandte Informatik der Universit{\"a}t Augsburg},
+  number    = {2011-14},
+  year      = {2011}
+}
+
+@article{Blelloch1994:NESL,
+        author = "Guy~E. Blelloch and Siddhartha Chatterjee and 
+		Jonathan~C. Hardwick and Jay Sipelstein and Marco Zagha",
+        title = "Implementation of a Portable Nested Data-Parallel Language",
+       	journal = "Journal of Parallel and Distributed Computing",
+	volume = 21,
+	number = 1,
+        pages = "4--14",
+	month = apr,
+	year = 1994
+}
+
+@inproceedings{Steele1986:CML,
+ author = {Steele,Jr., Guy L. and Hillis, W. Daniel},
+ title = {Connection Machine Lisp: Fine-grained Parallel Symbolic Processing},
+ booktitle = {Proceedings of the 1986 {ACM} Conference on {LISP} and Functional Programming},
+ series = {LFP '86},
+ year = {1986},
+ isbn = {0-89791-200-4},
+ location = {Cambridge, Massachusetts, USA},
+ pages = {279--297},
+ numpages = {19},
+ url = {http://doi.acm.org/10.1145/319838.319870},
+ doi = {10.1145/319838.319870},
+ acmid = {319870},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@InProceedings{Frigo1998:Cilk,
+author	= {Matteo Frigo and Charles E. Leiserson and Keith H. Randall},
+address	= {Montreal, Quebec, Canada},
+booktitle	= {Proceedings of the {ACM} {SIGPLAN} '98 Conference on Programming Language Design and Implementation (PLDI)},
+month	 = jun,
+note	 = {Proceedings published {ACM SIGPLAN} Notices, Vol. 33, No. 5, May, 1998.},
+year	 = {1998},
+pages	 = {212--223},
+title	 = {The Implementation of the {C}ilk-5 Multithreaded Language}
+}
+
+@Misc{Intel:TBB,
+  OPTkey =       {},
+  author =    {Intel},
+  title =     {Threading Building Blocks},
+  howpublished = {\url{https://www.threadingbuildingblocks.org/}},
+  OPTmonth =     {},
+  year =      {2013},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+@inproceedings	{Blelloch1996:NESL,
+author		= "Guy~E. Blelloch and John Greiner",
+title		= "A Provable Time and Space Efficient Implementation of NESL",
+booktitle	= "ACM SIGPLAN International Conference on Functional Programming",
+year		= 1996,
+month		= may,
+pages		= "213--225"}
+
+@inproceedings{Sarkar04:Nanopass,
+ author = {Sarkar, Dipanwita and Waddell, Oscar and Dybvig, R. Kent},
+ title = {A nanopass infrastructure for compiler education},
+ booktitle = {Proceedings of the ninth ACM SIGPLAN international conference on Functional programming},
+ year = {2004},
+ publisher = {ACM},
+ series = {ICFP '04},
+ isbn = {1-58113-905-5},
+ location = {Snow Bird, UT, USA},
+ pages = {201--212},
+ numpages = {12},
+ OPTurl = {http://doi.acm.org/10.1145/1016850.1016878},
+ doi = {10.1145/1016850.1016878},
+ acmid = {1016878},
+ address = {New York, NY, USA},
+ keywords = {compiler writing tools, domain-specific languages, nanopass compilers, syntactic abstraction},
+}
+
+@inproceedings{Ryoo2008:Optimizing,
+ author = {Ryoo, Shane and Rodrigues, Christopher I. and Baghsorkhi, Sara S. and Stone, Sam S. and Kirk, David B. and Hwu, Wen-mei W.},
+ title = {Optimization principles and application performance evaluation of a multithreaded GPU using CUDA},
+ booktitle = {Proceedings of the 13th ACM SIGPLAN Symposium on Principles and practice of parallel programming},
+ year = {2008},
+ publisher = {ACM},
+ series = {PPoPP '08},
+ isbn = {978-1-59593-795-7},
+ location = {Salt Lake City, UT, USA},
+ pages = {73--82},
+ numpages = {10},
+ OPTurl = {http://doi.acm.org/10.1145/1345206.1345220},
+ doi = {10.1145/1345206.1345220},
+ acmid = {1345220},
+ address = {New York, NY, USA},
+ keywords = {GPU computing, parallel computing},
+}
+
+@inproceedings{johnsson1985lambda,
+  title={Lambda lifting: Transforming programs to recursive equations},
+  author={Johnsson, Thomas},
+  booktitle={Functional programming languages and computer architecture},
+  pages={190--203},
+  year={1985},
+  organization={Springer}
+}
+
+@article{Tarjan1972:DepthFirst,
+author = {Robert Tarjan},
+title = {Depth-First Search and Linear Graph Algorithms},
+journal = {SIAM Journal on Computing},
+volume = {1},
+number = {2},
+pages = {146-160},
+year = {1972},
+doi = {10.1137/0201010},
+OPTURL = {http://epubs.siam.org/doi/abs/10.1137/0201010},
+eprint = {http://epubs.siam.org/doi/pdf/10.1137/0201010}
+}
+
+@inproceedings{Crary98:TypePassing,
+ author = {Crary, Karl and Weirich, Stephanie and Morrisett, Greg},
+ title = {Intensional polymorphism in type-erasure semantics},
+ booktitle = {Proceedings of the third ACM SIGPLAN international conference on Functional programming},
+ publisher = {ACM},
+ year = {1998},
+ series = {ICFP '98},
+ isbn = {1-58113-024-4},
+ location = {Baltimore, Maryland, USA},
+ pages = {301--312},
+ numpages = {12},
+ OPTurl = {http://doi.acm.org/10.1145/289423.289459},
+ doi = {10.1145/289423.289459},
+ acmid = {289459},
+ address = {New York, NY, USA},
+}
+
+@Book{Cooper2003:Engineering,
+  author =    {Keith D. Cooper and Linda Torczon},
+  OPTeditor =    {},
+  title =        {Engineering a Compiler},
+  publisher =    {Elsevier Science},
+  year =         {2003},
+  OPTkey =       {},
+  OPTvolume =    {},
+  OPTnumber =    {},
+  OPTseries =    {},
+  OPTaddress =   {},
+  OPTedition =   {},
+  month =     {October},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+@inproceedings{Prabhu11:EigenCFA,
+ author = {Prabhu, Tarun and Ramalingam, Shreyas and Might, Matthew and Hall, Mary},
+ title = {{EigenCFA}: accelerating flow analysis with {GPUs}},
+ booktitle = {Proceedings of the 38th annual ACM SIGPLAN-SIGACT symposium on Principles of programming languages},
+ year = {2011},
+ publisher = {ACM},
+ series = {POPL '11},
+ isbn = {978-1-4503-0490-0},
+ location = {Austin, Texas, USA},
+ pages = {511--522},
+ numpages = {12},
+ OPTurl = {http://doi.acm.org/10.1145/1926385.1926445},
+ doi = {10.1145/1926385.1926445},
+ acmid = {1926445},
+ address = {New York, NY, USA},
+ keywords = {abstract interpretation, cps, eigencfa, flow analysis, gpu, lambda calculus, matrix, program analysis},
+}
+
+@inproceedings{Chafi11:Delite,
+ author = {Chafi, Hassan and Sujeeth, Arvind K. and Brown, Kevin J. and Lee, HyoukJoong and Atreya, Anand R. and Olukotun, Kunle},
+ title = {A domain-specific approach to heterogeneous parallelism},
+ booktitle = {Proceedings of the 16th ACM symposium on Principles and practice of parallel programming},
+ year = {2011},
+ publisher = {ACM},
+ series = {PPoPP '11},
+ isbn = {978-1-4503-0119-0},
+ location = {San Antonio, TX, USA},
+ pages = {35--46},
+ numpages = {12},
+ OPTurl = {http://doi.acm.org/10.1145/1941553.1941561},
+ doi = {10.1145/1941553.1941561},
+ acmid = {1941561},
+ address = {New York, NY, USA},
+ keywords = {domain-specific languages, dynamic optimizations, parallel programming, runtimes},
+}
+
+@inproceedings{Cunningham2011:X10toCUDA,
+ author = {Cunningham, Dave and Bordawekar, Rajesh and Saraswat, Vijay},
+ title = {GPU Programming in a High Level Language: Compiling X10 to CUDA},
+ booktitle = {Proceedings of the 2011 ACM SIGPLAN X10 Workshop},
+ series = {X10 '11},
+ year = {2011},
+ isbn = {978-1-4503-0770-3},
+ location = {San Jose, California},
+ pages = {8:1--8:10},
+ articleno = {8},
+ numpages = {10},
+ doi = {10.1145/2212736.2212744},
+ acmid = {2212744},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {CUDA, GPU, Java, X10, distributed, heterogeneous, high-level, multicore, parallel},
+ url = {http://doi.acm.org/10.1145/2212736.2212744},
+} 
+
+@inproceedings{Bocchino09:DPJ,
+ author = {Bocchino,Jr., Robert L. and Adve, Vikram S. and Adve, Sarita V. and Snir, Marc},
+ title = {Parallel programming must be deterministic by default},
+ booktitle = {Proceedings of the First USENIX conference on Hot topics in parallelism},
+ publisher = {USENIX Association},
+ year = {2009},
+ series = {HotPar'09},
+ location = {Berkeley, California},
+ pages = {4--4},
+ numpages = {1},
+ OPTurl = {http://dl.acm.org/citation.cfm?id=1855591.1855595},
+ acmid = {1855595},
+ address = {Berkeley, CA, USA},
+}
+
+@inproceedings{Ji2013:RSVM,
+ author = {Ji, Feng and Lin, Heshan and Ma, Xiaosong},
+ title = {RSVM: A Region-based Software Virtual Memory for GPU},
+ booktitle = {Proceedings of the 22Nd International Conference on Parallel Architectures and Compilation Techniques},
+ series = {PACT '13},
+ year = {2013},
+ isbn = {978-1-4799-1021-2},
+ location = {Edinburgh, Scotland, UK},
+ pages = {269--278},
+ numpages = {10},
+ acmid = {2523758},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {GPGPU, GPU memory mangement, heterogeneous system},
+ url = {http://dl.acm.org/citation.cfm?id=2523721.2523758},
+} 
+
+@TechReport{Collins2013:NOVA,
+  author =       {Alexander Collins and Dominik Grewe and Vinod Grover and Sean Lee and Adriana Susnea},
+  title =        {{NOVA}: A Functional Language for Data Parallelism},
+  institution =  {NVIDIA},
+  year =         {2013},
+  OPTkey =       {},
+  OPTtype =      {},
+  number =    {NVR-2013-001},
+  OPTaddress =   {},
+  month =     {July},
+  OPTnote =      {},
+  OPTannote =    {}
+}
+
+
+
+
+
+
+
+@misc{acrobat,
+  key = "acrobat",
+  title = {{Adobe Acrobat Reader 7}},
+   note = {\url{http://www.adobe.com/products/acrobat/}}
+}
+
+@article{ethics,
+  title = {{Social Impacts of Computing: Codes of Professional Ethics}},
+  author = {Ronald E. Anderson},
+  doi = "10.1177/089443939201000402",
+  journal = "Social Science Computer Review December",
+  year = 1992,
+  volume = 10,
+  number = 4,
+  pages = "453-469"
+}
+
+@misc{acm_categories,
+  key = "association",
+  title = {{How to Classify Works Using ACM's Computing Classification System}},
+  note = {\url{http://www.acm.org/class/how_to_use.html}},
+},
+
+@inproceedings{Klemmer:2002:WSC:503376.503378,
+ author = {Klemmer, Scott R. and Thomsen, Michael and Phelps-Goodman, Ethan and Lee, Robert and Landay, James A.},
+ title = {Where do web sites come from?: capturing and interacting with design history},
+ booktitle = {Proc. CHI 2002},
+ year = {2002},
+ pages = {1--8},
+ publisher = {ACM Press},
+} 
+
+@inproceedings{Mather:2000:MUT,
+  title = {Making up titles for conference papers},
+  author = {Mather, B. D.},
+  booktitle = {Ext. Abstracts CHI 2000},
+  year = 2000,
+  publisher = "ACM Press",
+  pages = "1-2",
+}
+
+@book{Schwartz:1995:GBF,
+  title = {{Guidelines for Bias-Free Writing}},
+  author = {Schwartz, Marilyn},
+  publisher = {Indiana University Press},
+  location = {Bloomington, IN, USA},
+  year = 1995,
+}
+
+@inproceedings{Zellweger:2001:FAO:504216.504224,
+ author = {Zellweger, Polle T. and Bouvin, Niels Olof and Jeh{\o}j, Henning and Mackinlay, Jock D.},
+ title = {Fluid annotations in an open world},
+ booktitle = {Proc. Hypertext 2001},
+ year = {2001},
+ pages = {9--18},
+ publisher = {ACM Press},
+}
+
+@inproceedings{Ruan:2013:RSS:2547685.2547700,
+ author = {Ruan, Yang and Fox, Geoffrey},
+ title = {A Robust and Scalable Solution for Interpolative Multidimensional Scaling with Weighting},
+ booktitle = {Proceedings of the 2013 IEEE 9th International Conference on e-Science},
+ series = {ESCIENCE '13},
+ year = {2013},
+ isbn = {978-0-7695-5083-1},
+ pages = {61--69},
+ numpages = {9},
+ url = {http://dx.doi.org/10.1109/eScience.2013.30},
+ doi = {10.1109/eScience.2013.30},
+ acmid = {2547700},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {Deterministic Annealing, Multidimensional Scaling},
+} 
+
+@INPROCEEDINGS{7152592, 
+author={Fox, G.C. and Qiu, J. and Kamburugamuve, S. and Jha, S. and Luckow, A.}, 
+booktitle={Cluster, Cloud and Grid Computing (CCGrid), 2015 15th IEEE/ACM International Symposium on}, 
+title={HPC-ABDS High Performance Computing Enhanced Apache Big Data Stack}, 
+year={2015}, 
+pages={1057-1066}, 
+keywords={Big Data;SQL;cache storage;data privacy;monitoring;open systems;parallel processing;security of data;Apache Big Data stack;DevOps;HPC-ABDS;NewSQL;NoSQL;batch programming model;data transport;distributed coordination;file management;file systems;high performance computing;in-memory caching;infrastructure management;interoperability;message and data protocols;monitoring;object-relational mapping;privacy;resource management;security;stream processing;Big data;Cloud computing;Distributed databases;Google;Programming;Security;Apache Big Data Stack;HPC}, 
+doi={10.1109/CCGrid.2015.122}, 
+month={May},}
+
+@phdthesis{Ekanayake:2010:APR:2049110,
+ author = {Ekanayake, Jaliya},
+ advisor = {Fox, Geoffrey},
+ title = {Architecture and Performance of Runtime Environments for Data Intensive Scalable Computing},
+ year = {2010},
+ isbn = {978-1-124-44771-1},
+ note = {AAI3439561},
+ publisher = {Indiana University},
+ address = {Indianapolis, IN, USA},
+} 
+
+@book{BorgGroenen2005,
+  added-at = {2008-01-07T11:06:22.000+0100},
+  author = {Borg, I. and Groenen, P.J.F.},
+  biburl = {http://www.bibsonomy.org/bibtex/2b9360235f054e3b2ff0e4b4a0c63b4eb/tmalsburg},
+  interhash = {43d65ae9bb296e8b9f145d6b685c94fc},
+  intrahash = {b9360235f054e3b2ff0e4b4a0c63b4eb},
+  keywords = {dimensionalityreduction mds method statistics},
+  publisher = {Springer},
+  timestamp = {2008-01-07T11:06:22.000+0100},
+  title = {{Modern Multidimensional Scaling: Theory and Applications}},
+  year = 2005
+}
+
+@inproceedings{DBLP:conf/eScience/RuanF13,
+  author    = {Yang Ruan and
+               Geoffrey Fox},
+  title     = {A Robust and Scalable Solution for Interpolative Multidimensional
+               Scaling with Weighting},
+  booktitle = {9th {IEEE} International Conference on eScience, eScience 2013, Beijing,
+               China, October 22-25, 2013},
+  pages     = {61--69},
+  year      = {2013},
+  crossref  = {DBLP:conf/eScience/2013},
+  url       = {http://dx.doi.org/10.1109/eScience.2013.30},
+  doi       = {10.1109/eScience.2013.30},
+  timestamp = {Mon, 10 Nov 2014 18:11:35 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/conf/eScience/RuanF13},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{Rose:1990:DAA:89754.89757,
+ author = {Rose, K. and Gurewwitz, E. and Fox, G.},
+ title = {A Deterministic Annealing Approach to Clustering},
+ journal = {Pattern Recogn. Lett.},
+ issue_date = {Sep. 1990},
+ volume = {11},
+ number = {9},
+ month = sep,
+ year = {1990},
+ issn = {0167-8655},
+ pages = {589--594},
+ numpages = {6},
+ url = {http://dx.doi.org/10.1016/0167-8655(90)90010-Y},
+ doi = {10.1016/0167-8655(90)90010-Y},
+ acmid = {89757},
+ publisher = {Elsevier Science Inc.},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{Klock:1997:MSD:646594.697963,
+ author = {Klock, Hansj\"{o}rg and Buhmann, Joachim M.},
+ title = {Multidimensional Scaling by Deterministic Annealing},
+ booktitle = {Proceedings of the First International Workshop on Energy Minimization Methods in Computer Vision and Pattern Recognition},
+ series = {EMMCVPR '97},
+ year = {1997},
+ isbn = {3-540-62909-2},
+ pages = {245--260},
+ numpages = {16},
+ url = {http://dl.acm.org/citation.cfm?id=646594.697963},
+ acmid = {697963},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
+} 
+
+@inproceedings{Fox:2011:DAR:2110205.2110214,
+ author = {Fox, Geoffrey C.},
+ title = {Deterministic Annealing and Robust Scalable Data Mining for the Data Deluge},
+ booktitle = {Proceedings of the 2Nd International Workshop on Petascal Data Analytics: Challenges and Opportunities},
+ series = {PDAC '11},
+ year = {2011},
+ isbn = {978-1-4503-1130-4},
+ location = {Seattle, Washington, USA},
+ pages = {39--40},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2110205.2110214},
+ doi = {10.1145/2110205.2110214},
+ acmid = {2110214},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {clouds, clustering, deterministic annealing, multidimensional scaling, parallel computing},
+} 
+
+@article{DBLP:journals/ppl/Fox13,
+  author    = {Geoffrey Fox},
+  title     = {Robust Scalable Visualized Clustering in Vector and Non Vector Semi-Metric
+               Spaces},
+  journal   = {Parallel Processing Letters},
+  volume    = {23},
+  number    = {2},
+  year      = {2013},
+  url       = {http://dx.doi.org/10.1142/S0129626413400069},
+  doi       = {10.1142/S0129626413400069},
+  timestamp = {Thu, 11 Jul 2013 10:06:27 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/ppl/Fox13},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@INPROCEEDINGS{6691636, 
+author={Fox, G. and Mani, D.R. and Pyne, S.}, 
+booktitle={Big Data, 2013 IEEE International Conference on}, 
+title={Parallel deterministic annealing clustering and its application to LC-MS data analysis}, 
+year={2013}, 
+pages={665-673}, 
+keywords={data analysis;deterministic algorithms;diseases;health care;pattern clustering;pattern matching;proteomics;LC MS data analysis;distance resolution;human tuberculosis cohort;parallel deterministic annealing clustering;peak matching problem;position dependent variances;proteomic biomarker discovery;scalable parallel deterministic annealing formalism;trimmed clusters;unconstrained clusters;Conferences;Data handling;Data storage systems;Information management;LC-MS;clustering;deterministic annealing;parallel algorithms;performance;proteomics}, 
+doi={10.1109/BigData.2013.6691636}, 
+month={Oct},}
+
+@article{levenberg44,
+    author = {Levenberg, Kenneth},
+    citeulike-article-id = {10796881},
+    journal = {Quarterly Journal of Applied Mathmatics},
+    keywords = {indefinite, nonconvex, optimization},
+    number = {2},
+    pages = {164--168},
+    posted-at = {2012-06-17 09:00:21},
+    priority = {2},
+    title = {{A method for the solution of certain non-linear problems in least squares}},
+    volume = {II},
+    year = {1944}
+}
+
+@misc{plotviz,
+  key = "PlotVizWeb",
+  title = {{PlotViz on Web}},
+   note = {\url{https://github.com/DSC-SPIDAL/WebPViz}}
+}
+
+@misc{millionseq,
+  key = "MillionSeq",
+  title = {{The Million Sequence Clustering Project}},
+   note = {\url{http://salsahpc.indiana.edu/millionseq/}}
+}
+
+@INPROCEEDINGS{7152592, 
+author={Fox, G.C. and Qiu, J. and Kamburugamuve, S. and Jha, S. and Luckow, A.}, 
+booktitle={Cluster, Cloud and Grid Computing (CCGrid), 2015 15th IEEE/ACM International Symposium on}, 
+title={HPC-ABDS High Performance Computing Enhanced Apache Big Data Stack}, 
+year={2015}, 
+pages={1057-1066}, 
+keywords={Big Data;SQL;cache storage;data privacy;monitoring;open systems;parallel processing;security of data;Apache Big Data stack;DevOps;HPC-ABDS;NewSQL;NoSQL;batch programming model;data transport;distributed coordination;file management;file systems;high performance computing;in-memory caching;infrastructure management;interoperability;message and data protocols;monitoring;object-relational mapping;privacy;resource management;security;stream processing;Big data;Cloud computing;Distributed databases;Google;Programming;Security;Apache Big Data Stack;HPC}, 
+doi={10.1109/CCGrid.2015.122}, 
+month={May},}
+
+@inproceedings{Vega-Gisbert:2013:TAJ:2488551.2488599,
+ author = {Vega-Gisbert, Oscar and Roman, Jose E. and Gro\ss, Siegmar and Squyres, Jeffrey M.},
+ title = {Towards the Availability of Java Bindings in Open MPI},
+ booktitle = {Proceedings of the 20th European MPI Users' Group Meeting},
+ series = {EuroMPI '13},
+ year = {2013},
+ isbn = {978-1-4503-1903-4},
+ location = {Madrid, Spain},
+ pages = {141--142},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2488551.2488599},
+ doi = {10.1145/2488551.2488599},
+ acmid = {2488599},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@misc{threadaffinity,
+  key = "JavaThreadAffinity",
+  title = {{OpenHFT Java Thread Affinity}},
+   note = {\url{https://github.com/OpenHFT/Java-Thread-Affinity}}
+}
+
+@article{Bruck:1997:EAA:271425.271434,
+ author = {Bruck, Jehoshua and Ho, Ching-Tien and Upfal, Eli and Kipnis, Shlomo and Weathersby, Derrick},
+ title = {Efficient Algorithms for All-to-All Communications in Multiport Message-Passing Systems},
+ journal = {IEEE Trans. Parallel Distrib. Syst.},
+ issue_date = {November 1997},
+ volume = {8},
+ number = {11},
+ month = nov,
+ year = {1997},
+ issn = {1045-9219},
+ pages = {1143--1156},
+ numpages = {14},
+ url = {http://dx.doi.org/10.1109/71.642949},
+ doi = {10.1109/71.642949},
+ acmid = {271434},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ keywords = {All-to-all broadcast, all-to-all personalized communication, complete exchange, concatenation operation, distributed-memory system, index operation, message-passing system, multiscatter/gather, parallel system.},
+} 
+
+@misc{osubenchmarks,
+  key = "OSUBenchmarks",
+  title = {{OSU Micro-Benchmarks}},
+   note = {\url{http://mvapich.cse.ohio-state.edu/benchmarks/}}
+}
+
+@INPROCEEDINGS{1630794, 
+author={Huang, W. and Santhanaraman, G. and Jin, H.W. and Gao, Q. and Panda, D.K.}, 
+booktitle={Cluster Computing and the Grid, 2006. CCGRID 06. Sixth IEEE International Symposium on}, 
+title={Design of High Performance MVAPICH2: MPI2 over InfiniBand}, 
+year={2006}, 
+volume={1}, 
+pages={43-48}, 
+keywords={Communication channels;Computer architecture;Computer science;High performance computing;Laboratories;Message passing;Scalability;Sockets;Sun;Writing}, 
+doi={10.1109/CCGRID.2006.32}, 
+month={May},}
+
+@inproceedings{Li:2013:NSC:2493123.2462903,
+ author = {Li, Shigang and Hoefler, Torsten and Snir, Marc},
+ title = {NUMA-aware Shared-memory Collective Communication for MPI},
+ booktitle = {Proceedings of the 22Nd International Symposium on High-performance Parallel and Distributed Computing},
+ series = {HPDC '13},
+ year = {2013},
+ isbn = {978-1-4503-1910-2},
+ location = {New York, New York, USA},
+ pages = {85--96},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2462902.2462903},
+ doi = {10.1145/2462902.2462903},
+ acmid = {2462903},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {MPI, MPI_allreduce, NUMA, collective communication, multithreading},
+} 
+
+@inproceedings{Imam:2014:HLJ:2647508.2647514,
+ author = {Imam, Shams and Sarkar, Vivek},
+ title = {Habanero-Java Library: A Java 8 Framework for Multicore Programming},
+ booktitle = {Proceedings of the 2014 International Conference on Principles and Practices of Programming on the Java Platform: Virtual Machines, Languages, and Tools},
+ series = {PPPJ '14},
+ year = {2014},
+ isbn = {978-1-4503-2926-2},
+ location = {Cracow, Poland},
+ pages = {75--86},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2647508.2647514},
+ doi = {10.1145/2647508.2647514},
+ acmid = {2647514},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Habanero-Java library, Java task parallel library, lambda expressions, task parallelism},
+} 
+
+@misc{openhftjavalang,
+  key = "openhftjavalang",
+  title = {{OpenHFT JavaLang Project}},
+   note = {\url{https://github.com/OpenHFT/Java-Lang}}
+}
+
+@inproceedings{Wickramasinghe:2014:HMC:2612262.2612267,
+ author = {Wickramasinghe, U. S. and Bronevetsky, Greg and Lumsdaine, Andrew and Friedley, Andrew},
+ title = {Hybrid MPI: A Case Study on the Xeon Phi Platform},
+ booktitle = {Proceedings of the 4th International Workshop on Runtime and Operating Systems for Supercomputers},
+ series = {ROSS '14},
+ year = {2014},
+ isbn = {978-1-4503-2950-7},
+ location = {Munich, Germany},
+ pages = {6:1--6:8},
+ articleno = {6},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/2612262.2612267},
+ doi = {10.1145/2612262.2612267},
+ acmid = {2612267},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@article{Dagum:1998:OIA:615255.615542,
+ author = {Dagum, Leonardo and Menon, Ramesh},
+ title = {OpenMP: An Industry-Standard API for Shared-Memory Programming},
+ journal = {IEEE Comput. Sci. Eng.},
+ issue_date = {January 1998},
+ volume = {5},
+ number = {1},
+ month = jan,
+ year = {1998},
+ issn = {1070-9924},
+ pages = {46--55},
+ numpages = {10},
+ url = {http://dx.doi.org/10.1109/99.660313},
+ doi = {10.1109/99.660313},
+ acmid = {615542},
+ publisher = {IEEE Computer Society Press},
+ address = {Los Alamitos, CA, USA},
+} 
+
+@misc{nccl,
+  key = "nccl",
+  title = {{NVIDIA NCCL}},
+   note = {\url{https://github.com/NVIDIA/nccl}}
+}
+
+@inproceedings{Zaharia:2010:SCC:1863103.1863113,
+ author = {Zaharia, Matei and Chowdhury, Mosharaf and Franklin, Michael J. and Shenker, Scott and Stoica, Ion},
+ title = {Spark: Cluster Computing with Working Sets},
+ booktitle = {Proceedings of the 2Nd USENIX Conference on Hot Topics in Cloud Computing},
+ series = {HotCloud'10},
+ year = {2010},
+ location = {Boston, MA},
+ pages = {10--10},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=1863103.1863113},
+ acmid = {1863113},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+}
+
+@phdthesis{lechai,
+  author       = {Lei Chai}, 
+  title        = {High Performance and Scalable MPI Intra-Node Communication Middleware for Multi-Core Clusters},
+  school       = {Graduate School of The Ohio State University},
+  year         = 2009,
+}
+
+@techreport{ogre,
+  author       = {Fox, Geoffrey and Jha, Shantenu and Qiu, Judy and Ekanayake, Saliya and Luckow, A.}, 
+  title        = {Towards a Comprehensive Set of Big Data Benchmarks},
+  year         = 2015,
+  url = {http://grids.ucs.indiana.edu/ptliupages/publications/OgreFacetsv9.pdf}
+}
+
+@book{White:2009:HDG:1717298,
+ author = {White, Tom},
+ title = {Hadoop: The Definitive Guide},
+ year = {2009},
+ isbn = {0596521979, 9780596521974},
+ edition = {1st},
+ publisher = {O'Reilly Media, Inc.},
+} 
+
+@inproceedings{Dean:2004:MSD:1251254.1251264,
+ author = {Dean, Jeffrey and Ghemawat, Sanjay},
+ title = {MapReduce: Simplified Data Processing on Large Clusters},
+ booktitle = {Proceedings of the 6th Conference on Symposium on Opearting Systems Design \& Implementation - Volume 6},
+ series = {OSDI'04},
+ year = {2004},
+ location = {San Francisco, CA},
+ pages = {10--10},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=1251254.1251264},
+ acmid = {1251264},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+@INPROCEEDINGS{7152592, 
+author={Fox, G.C. and Qiu, J. and Kamburugamuve, S. and Jha, S. and Luckow, A.}, 
+booktitle={Cluster, Cloud and Grid Computing (CCGrid), 2015 15th IEEE/ACM International Symposium on}, 
+title={HPC-ABDS High Performance Computing Enhanced Apache Big Data Stack}, 
+year={2015}, 
+pages={1057-1066}, 
+keywords={Big Data;SQL;cache storage;data privacy;monitoring;open systems;parallel processing;security of data;Apache Big Data stack;DevOps;HPC-ABDS;NewSQL;NoSQL;batch programming model;data transport;distributed coordination;file management;file systems;high performance computing;in-memory caching;infrastructure management;interoperability;message and data protocols;monitoring;object-relational mapping;privacy;resource management;security;stream processing;Big data;Cloud computing;Distributed databases;Google;Programming;Security;Apache Big Data Stack;HPC}, 
+doi={10.1109/CCGrid.2015.122}, 
+month={May},}
+
+@misc{nas,
+  key = "NAS",
+  title = {{NAS Parallel Benchmarks}},
+  note = {\url{http://www.nas.nasa.gov/publications/npb.html}},
+}
+
+@misc{skamburu2016,
+    author = {Kamburugamuve, Supun and Ekanayake, Saliya and Milinda Pathirage and Fox, Geoffrey},
+    title = {{Towards High Performance Processing of Streaming Data in Large Data Centers}},
+    note = {{Technical Report}},
+    year=2016,
+    howpublished ={\url{http://dsc.soic.indiana.edu/publications/high_performance_processing_stream.pdf}}
+}
+
+@misc{linpack,
+  key = "LINPACK",
+  title = {{LINPACK}},
+  note = {\url{http://www.netlib.org/linpack}},
+}
+
+@Inbook{Dongarra1988,
+author="Dongarra, Jack J.",
+editor="Houstis, E. N.
+and Papatheodorou, T. S.
+and Polychronopoulos, C. D.",
+chapter="The LINPACK Benchmark: An explanation",
+title="Supercomputing: 1st International Conference Athens, Greece, June 8--12, 1987 Proceedings",
+year="1988",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="456--474",
+isbn="978-3-540-38888-3",
+doi="10.1007/3-540-18991-2_27",
+url="http://dx.doi.org/10.1007/3-540-18991-2_27"
+}
+
+@misc{tpc,
+  key = "TPC",
+  title = {{Transaction Processing Performance Council. TPC Benchmarks.}},
+  note = {\url{http://www.tpc.org/information/benchmarks.asp}},
+}
+
+@inproceedings{Anderson:1990:LPL:110382.110385,
+ author = {Anderson, E. and Bai, Z. and Dongarra, J. and Greenbaum, A. and McKenney, A. and Du Croz, J. and Hammerling, S. and Demmel, J. and Bischof, C. and Sorensen, D.},
+ title = {LAPACK: A Portable Linear Algebra Library for High-performance Computers},
+ booktitle = {Proceedings of the 1990 ACM/IEEE Conference on Supercomputing},
+ series = {Supercomputing '90},
+ year = {1990},
+ isbn = {0-89791-412-0},
+ location = {New York, New York, USA},
+ pages = {2--11},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=110382.110385},
+ acmid = {110385},
+ publisher = {IEEE Computer Society Press},
+ address = {Los Alamitos, CA, USA},
+} 
+
+@INPROCEEDINGS{1392882, 
+author={L. S. Blackford and J. Choi and A. Cleary and J. Demmel and I. Dhillon and J. Dongarra and S. Hammarling and G. Henry and A. Petitet and K. Stanley and D. Walker and R. C. Whaley}, 
+booktitle={Supercomputing, 1996. Proceedings of the 1996 ACM/IEEE Conference on}, 
+title={ScaLAPACK: A Portable Linear Algebra Library for Distributed Memory Computers - Design Issues and Performance}, 
+year={1996}, 
+pages={5-5}, 
+keywords={math libraries;numerical linear algebra;parallel computing;Computer science;Contracts;Distributed computing;Laboratories;Least squares methods;Libraries;Linear algebra;Portable computers;Software performance;Standards development;math libraries;numerical linear algebra;parallel computing}, 
+doi={10.1109/SUPERC.1996.183513}, 
+month={},}
+
+@article{Dongarra:1992:PVC:141868.141871,
+ author = {Dongarra, Jack J.},
+ title = {Performance of Various Computers Using Standard Linear Equations Software},
+ journal = {SIGARCH Comput. Archit. News},
+ issue_date = {June 1992},
+ volume = {20},
+ number = {3},
+ month = jun,
+ year = {1992},
+ issn = {0163-5964},
+ pages = {22--44},
+ numpages = {23},
+ url = {http://doi.acm.org/10.1145/141868.141871},
+ doi = {10.1145/141868.141871},
+ acmid = {141871},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@ARTICLE{Dongarra03thelinpack,
+    author = {Jack J. Dongarra and Piotr Luszczek and Antoine Petitet},
+    title = {The LINPACK benchmark: Past, present, and future. Concurrency and Computation: Practice and Experience},
+    journal = {Concurrency and Computation: Practice and Experience},
+    year = {2003},
+    volume = {15},
+    pages = {2003}
+}
+
+@INPROCEEDINGS{4912932, 
+author={D. A. Mallón and G. L. Taboada and J. Touriño and R. Doallo}, 
+booktitle={2009 17th Euromicro International Conference on Parallel, Distributed and Network-based Processing}, 
+title={NPB-MPJ: NAS Parallel Benchmarks Implementation for Message-Passing in Java}, 
+year={2009}, 
+pages={181-190}, 
+keywords={Java;distributed memory systems;message passing;multi-threading;optimisation;software libraries;software performance evaluation;C/Fortran parallel library;Java;NAS parallel benchmarks implementation;NPB-MPJ;distributed memory programming;high performance computing;message-passing;multithreading support;optimization techniques;parallel programming multicore systems;performance evaluation;Application software;Availability;Computer architecture;Design optimization;Industrial training;Java;Libraries;Multithreading;Parallel programming;Scalability}, 
+doi={10.1109/PDP.2009.59}, 
+ISSN={1066-6192}, 
+month={Feb},}
+
+@techreport{handbookofbigdatabench,
+   author = {Luo, Chunjie and Gao, Wanling and Jia, Zhen and Han, Rui and Li, Jingwei and Lin, Xinlong and Wang, Lei and Zhu, Yuqing and Zhan, Jianfeng},
+   title = {Handbook of BigDataBench (Version 3.1) - A Big Data Benchmark Suite},
+   url = {http://prof.ict.ac.cn/BigDataBench/wp-content/uploads/2014/12/BigDataBench-handbook-6-12-16.pdf},
+   type = {Report}
+}
+
+@article{DBLP:journals/corr/WangZLZYHGJSZZLZLQ14,
+  author    = {Lei Wang and
+               Jianfeng Zhan and
+               Chunjie Luo and
+               Yuqing Zhu and
+               Qiang Yang and
+               Yongqiang He and
+               Wanling Gao and
+               Zhen Jia and
+               Yingjie Shi and
+               Shujie Zhang and
+               Chen Zheng and
+               Gang Lu and
+               Kent Zhan and
+               Xiaona Li and
+               Bizhu Qiu},
+  title     = {BigDataBench: a Big Data Benchmark Suite from Internet Services},
+  journal   = {CoRR},
+  volume    = {abs/1401.1406},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1401.1406},
+  timestamp = {Thu, 02 Oct 2014 07:44:45 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/WangZLZYHGJSZZLZLQ14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@inbook{
+   author = {Jolliffe, Ian},
+   title = {Principal Component Analysis},
+   booktitle = {Encyclopedia of Statistics in Behavioral Science},
+   publisher = {John Wiley & Sons, Ltd},
+   keywords = {dimension reduction
+factor analysis
+multivariate analysis
+variance maximization},
+   ISBN = {9780470013199},
+   DOI = {10.1002/0470013192.bsa501},
+   url = {http://dx.doi.org/10.1002/0470013192.bsa501},
+   year = {2005},
+   type = {Book Section}
+}
+
+@inbook{hibench,
+   author = {Huang, Shengsheng and Huang, Jie and Dai, Jinquan and Xie, Tao and Huang, Bo},
+   title = {The HiBench Benchmark Suite: Characterization of the MapReduce-Based Data Analysis},
+   booktitle = {New Frontiers in Information and Software as Services},
+   editor = {Agrawal, Divyakant and Candan, K. Selçuk and Li, Wen-Syan},
+   series = {Lecture Notes in Business Information Processing},
+   publisher = {Springer Berlin Heidelberg},
+   volume = {74},
+   chapter = {9},
+   pages = {209-228},
+   ISBN = {978-3-642-19293-7},
+   DOI = {10.1007/978-3-642-19294-4_9},
+   url = {http://dx.doi.org/10.1007/978-3-642-19294-4_9},
+   year = {2011},
+   type = {Book Section}
+}
+
+@misc{hibench.dbms
+   author = {Frank, Michael and Poess, Meikel and Rabl, Tilmann},
+   title = {Efficient update data generation for DBMS benchmarks},
+   publisher = {ACM},
+   pages = {169-180},
+   DOI = {10.1145/2188286.2188315},
+   url = {http://dl.acm.org/citation.cfm?doid=2188286.2188315},
+   year = {2012},
+   type = {Conference Paper}
+}
+
+@misc{bigbench
+   author = {Ghazal, Ahmad and Rabl, Tilmann and Hu, Minqing and Raab, Francois and Poess, Meikel and Crolotte, Alain and Jacobsen, Hans-Arno},
+   title = {BigBench: towards an industry standard benchmark for big data analytics},
+   publisher = {ACM},
+   pages = {1197-1208},
+   DOI = {10.1145/2463676.2463712},
+   url = {http://msrg.org/publications/pdf_files/2013/Ghazal13-BigBench:_Towards_an_Industry_Standa.pdf},
+   year = {2013},
+   type = {Conference Paper}
+}
+
+@misc{bigbench.site
+   author = {Gowda, Bhaskar D and Ravi, Nishkam},
+   title = {BigBench: Toward An Industry-Standard Benchmark for Big Data Analytics},
+   number = {1/4/15},
+   month = {November 25, 2014},
+   url = {http://blog.cloudera.com/blog/2014/11/bigbench-toward-an-industry-standard-benchmark-for-big-data-analytics/},
+   year = {2014},
+   type = {Web Page}
+}
+
+@inproceedings{wbdb
+   author = {Tilmann Rabl and Meikel Poess and Chaitanya Baru and Jacobsen, Hans-Arno},
+   title = {Specifying Big Data Benchmarks: First Workshop, WBDB 2012, San Jose, CA, USA, May 8-9, 2012 and Second Workshop, WBDB 2012, Pune, India, December 17-18, 2012, Revised Selected Papers},
+   publisher = {Springer Berlin Heidelberg},
+   ISBN = {9783642539732},
+   url = {http://link.springer.com/book/10.1007%2F978-3-642-53974-9},
+   type = {Conference Proceedings}
+}
+
+@techreport{mckinsey
+   author = {Manyika, James and Chui, Michael and Brown, Brad and Bughin, Jacques and Dobbs, Richard and Roxburgh, Charles and Byers, Angela Hung},
+   title = {Big data: The next frontier for innovation, competition, and productivity},
+   month = {May 2011},
+   url = {http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation},
+   year = {2011},
+   type = {Report}
+}
+
+@misc{pdgf
+   author = {Frank, Michael and Poess, Meikel and Rabl, Tilmann},
+   title = {Efficient update data generation for DBMS benchmarks},
+   publisher = {ACM},
+   pages = {169-180},
+   DOI = {10.1145/2188286.2188315},
+   url = {http://dl.acm.org/citation.cfm?doid=2188286.2188315},
+   year = {2012},
+   type = {Conference Paper}
+}
+
+@misc{linkbench
+   author = {Armstrong, Timothy G. and Ponnekanti, Vamsi and Borthakur, Dhruba and Callaghan, Mark},
+   title = {LinkBench: a database benchmark based on the Facebook social graph},
+   publisher = {ACM},
+   pages = {1185-1196},
+   DOI = {10.1145/2463676.2465296},
+   url = {http://people.cs.uchicago.edu/~tga/pubs/sigmod-linkbench-2013.pdf},
+   year = {2013},
+   type = {Conference Paper}
+}
+
+@inproceedings{minebench
+   author = {Narayanan, Ramanathan and zıs.ıkyılmaz, Berkin O¨ and Zambreno, Joseph and Memik, Gokhan and Choudhary, Alok and Pisharath, Jayaprakash},
+   title = {MineBench: A Benchmark Suite for Data Mining Workloads},
+   booktitle = {Workload Characterization, 2006 IEEE International Symposium on},
+   pages = {182-188},
+   keywords = {computer architecture
+data mining
+MineBench
+data extraction
+Application software
+Association rules
+Classification tree analysis
+Clustering algorithms
+DNA
+Databases
+Fuzzy logic
+Sequences},
+   DOI = {10.1109/IISWC.2006.302743},
+   url = {http://cucis.ece.northwestern.edu/publications/pdf/NarOzi06A.pdf},
+   type = {Conference Proceedings}
+}
+
+@inproceedings{minebench2
+   author = {Ozisikyilmaz, B. and Narayanan, R. and Zambreno, J. and Memik, G. and Choudhary, A.},
+   title = {An Architectural Characterization Study of Data Mining and Bioinformatics Workloads},
+   booktitle = {Workload Characterization, 2006 IEEE International Symposium on},
+   pages = {61-70},
+   keywords = {benchmark testing
+biology computing
+cache storage
+data mining
+shared memory systems
+L1 cache miss rates
+L2 cache miss rates
+MineBench
+architectural characterization
+association rule mining
+bioinformatics workloads
+branch misprediction rates
+data extraction
+performance analysis
+shared memory machine
+Algorithm design and analysis
+Application software
+Association rules
+Bioinformatics
+Computer science
+Data engineering
+Multimedia databases
+Streaming media},
+   DOI = {10.1109/IISWC.2006.302730},
+   url = {http://www.bioperf.org/ONZ06.pdf},
+   type = {Conference Proceedings}
+}
+
+@book{White:2012:HDG:2285539,
+ author = {White, Tom},
+ title = {Hadoop: The Definitive Guide},
+ year = {2012},
+ isbn = {1449311520, 9781449311520},
+ publisher = {O'Reilly Media, Inc.},
+} 
+
+@TECHREPORT{bigdataconvergence,
+  AUTHOR =        {Geoffrey Fox, Judy Qiu, Shantenu Jha, Saliya Ekanayake, and Supun Kamburugamuve},
+  TITLE =         {Big Data, Simulations and HPC Convergence},
+  MONTH =         {January},
+  YEAR  =         {2016},
+  URL   =         {http://dsc.soic.indiana.edu/publications/HPCBigDataConvergence.pdf},
+}
+
+@article{DBLP:journals/corr/JiaZWHMYLL14,
+  author    = {Zhen Jia and
+               Jianfeng Zhan and
+               Lei Wang and
+               Rui Han and
+               Sally A. McKee and
+               Qiang Yang and
+               Chunjie Luo and
+               Jingwei Li},
+  title     = {Characterizing and Subsetting Big Data Workloads},
+  journal   = {CoRR},
+  volume    = {abs/1409.0792},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1409.0792},
+  timestamp = {Thu, 02 Oct 2014 07:44:50 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/JiaZWHMYLL14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{Asanovic:2009:VPC:1562764.1562783,
+ author = {Asanovic, Krste and Bodik, Rastislav and Demmel, James and Keaveny, Tony and Keutzer, Kurt and Kubiatowicz, John and Morgan, Nelson and Patterson, David and Sen, Koushik and Wawrzynek, John and Wessel, David and Yelick, Katherine},
+ title = {A View of the Parallel Computing Landscape},
+ journal = {Commun. ACM},
+ issue_date = {October 2009},
+ volume = {52},
+ number = {10},
+ month = oct,
+ year = {2009},
+ issn = {0001-0782},
+ pages = {56--67},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/1562764.1562783},
+ doi = {10.1145/1562764.1562783},
+ acmid = {1562783},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@inbook{ogres,
+   author = {Fox, Geoffrey C. and Jha, Shantenu and Qiu, Judy and Ekanayake, Saliya and Luckow, Andre},
+   title = {Towards a Comprehensive Set of Big Data Benchmarks},
+   booktitle = {Big Data and High Performance Computing},
+   series = {Advances in Parallel Computing},
+   volume = {26},
+   pages = {47 - 66},
+   DOI = {10.3233/978-1-61499-583-8-47},
+   url = {http://grids.ucs.indiana.edu/ptliupages/publications/OgreFacetsv9.pdf},
+   year = {2015},
+   type = {Book Section}
+}
+
+@techreport{diamonds,
+   author = {C.Fox, Geoffrey and Qiu, Judy and Jha, Shantenu and Ekanayake, Saliya and Kamburugamuve, Supun},
+   title = {Big Data, Simulations and HPC Convergence},
+   DOI = {10.13140/RG.2.1.1858.8566 },
+   url = {http://dsc.soic.indiana.edu/publications/HPCBigDataConvergence.pdf},
+   year = {2016},
+   type = {Report}
+}
+
+@inproceedings{Li:2015:SCB:2742854.2747283,
+ author = {Li, Min and Tan, Jian and Wang, Yandong and Zhang, Li and Salapura, Valentina},
+ title = {SparkBench: A Comprehensive Benchmarking Suite for in Memory Data Analytic Platform Spark},
+ booktitle = {Proceedings of the 12th ACM International Conference on Computing Frontiers},
+ series = {CF '15},
+ year = {2015},
+ isbn = {978-1-4503-3358-0},
+ location = {Ischia, Italy},
+ pages = {53:1--53:8},
+ articleno = {53},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/2742854.2747283},
+ doi = {10.1145/2742854.2747283},
+ acmid = {2747283},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {benchmarking, cloud computing, evaluation, in memory data analytics, spark},
+} 
+

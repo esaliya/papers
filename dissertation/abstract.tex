@@ -1,0 +1,12 @@
+\addcontentsline{toc}{section}{Abstract}
+\begin{abstract}
+
+Big data queries are increasing in complexity and performance of data analytics is of growing importance. To this end, big data on \ac{HPC} infrastructure is becoming a pathway to high-performance data analytics. The state of performance studies on this convergence between big data and \ac{HPC}, however, is limited and ad hoc. A systematic performance study is, therefore, timely and forms the core of this research.
+
+This thesis investigates the challenges in developing big data applications with significant computations and strict latency guarantees in multicore \ac{HPC} clusters. Three key areas it considers are concurrency, affinity, and communication. For example, analytics depend on collective communications, unlike classic scientific simulations, which mostly use neighbor-communications. Minimizing this cost while scaling out to higher parallelisms require non-trivial optimizations, especially when using high-level languages such as Java or Scala. Exploiting intra-node parallelism on modern multicore chips is addressed under concurrency, while data locality and \ac{NUMA} effects are discussed under affinity. The investigation also includes a discussion on performance implications of different programming models such as dataflow and message passing used in big data analytics. The optimizations identified in this research are incorporated in developing \ac{SPIDAL} in Java, which includes a collection of multidimensional scaling and clustering algorithms optimized to run on \ac{HPC} clusters.
+
+Besides presenting performance optimizations, this thesis explores a novel scheme to characterize big data benchmarks. Fundamentally, a benchmark exercises a certain performance related aspect of a given system. For example, \ac{HPC} benchmarks such as \acs{LINPACK} and \ac{NPB} evaluate the \acp{flop} per second through a computational workload. The challenge with big data workloads is the diversity, which makes it impossible to classify them along a single dimension. \acp{CD} is a multifaceted scheme that identify four dimensions of big data workloads. These dimensions are the problem architecture, execution, data source and style, and processing view. 
+
+The performance optimizations together with the richness of \acp{CD}, provide a systematic guide to developing high-performance big data benchmarks, especially targeted for data analytics on large multicore \ac{HPC} clusters.
+
+\end{abstract}
