@@ -483,8 +483,8 @@ In supported \acp{OS}, process affinity determines where the \ac{OS} can schedul
 \cline{3-5}
  & \multicolumn{1}{l|}{} & \multicolumn{3}{c|}{\textbf{Process Affinity}} &  \\ \cline{3-5}
  &  & Cores & Socket & None (All) &  \\ \cline{1-5}
-\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Thread\\ Affinity\end{tabular}}}} & Inherit & Q & R & U &  \\ \cline{2-5}
-\multicolumn{1}{|c|}{} & Explicit per Core & T & V & S &  \\ \cline{1-5}
+\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Thread\\ Affinity\end{tabular}}}} & Inherit & CI & SI & NI &  \\ \cline{2-5}
+\multicolumn{1}{|c|}{} & Explicit per Core & CE & SE & NE &  \\ \cline{1-5}
 \end{tabular}
 \end{table}
 
@@ -565,19 +565,19 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
     \end{minipage}   
 \end{figure*}
 
-%minipage kmeans Java T vs S | Java vs C
+%minipage kmeans Java CE vs NE | Java vs C
 \begin{figure*}[!htb]
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_kmeans_1mil_varying_centers_BSP_T_vs_BSP_S_Java}
-		\caption{Java K-Means \ac{LRT-BSP} affinity T vs S performance for 1 mil points with 1k,10k,50k,100k, and 500k centers on 16 nodes over varying threads and processes.}
+		\caption{Java K-Means \ac{LRT-BSP} affinity CE vs NE performance for 1 mil points with 1k,10k,50k,100k, and 500k centers on 16 nodes over varying threads and processes.}
 		\label{fig:images/fig_kmeans_1mil_varying_centers_BSP_T_vs_BSP_S_Java}
     \end{minipage}
     \hspace{1.4mm}
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_kmeans_1mil_varying_centers_BSP_T_C_vs_Java}
-		\caption{Java vs C K-Means \ac{LRT-BSP} affinity T performance for 1 mil points with 1k,10k,50k,100k, and 500k centers on 16 nodes over varying threads and processes.}
+		\caption{Java vs C K-Means \ac{LRT-BSP} affinity CE performance for 1 mil points with 1k,10k,50k,100k, and 500k centers on 16 nodes over varying threads and processes.}
 		\label{fig:images/fig_kmeans_1mil_varying_centers_BSP_T_C_vs_Java}
     \end{minipage}   
 \end{figure*}
@@ -587,14 +587,14 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
 	\begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T}
-        \caption{Java K-Means 1 mil points with 1k,10k, and 100k centers performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. The affinity pattern is T.}
+        \caption{Java K-Means 1 mil points with 1k,10k, and 100k centers performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. The affinity pattern is CE.}
         \label{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T}
     \end{minipage}
     \hspace{1.4mm}
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_kmeans_1mil_varying_centers_as_50k_500k_FJ_vs_BSP_T}
-        \caption{Java K-Means 1 mil points with 50k, and 500k centers performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. The affinity pattern is T.}
+        \caption{Java K-Means 1 mil points with 50k, and 500k centers performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. The affinity pattern is CE.}
         \label{fig:fig_kmeans_1mil_varying_centers_as_50k_500k_FJ_vs_BSP_T}
     \end{minipage}
 \end{figure*}
@@ -604,14 +604,14 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
 	\begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_damds_50k_binding_patterns}
-        \caption{Java DA-MDS 50k points performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are T,S,V, and U.}
+        \caption{Java DA-MDS 50k points performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are CE,NE,SE, and NI.}
         \label{fig:fig_damds_50k_binding_patterns}
     \end{minipage}
     \hspace{1.4mm}
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_damds_50k_binding_patterns_on_36core_nodes}
-        \caption{Java DA-MDS 50k points performance on 16 of 36-core nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are T,S,V, and U.}
+        \caption{Java DA-MDS 50k points performance on 16 of 36-core nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are CE,NE,SE, and NI.}
         \label{fig:fig_damds_50k_binding_patterns_on_36core_nodes}
     \end{minipage}
 \end{figure*}
@@ -621,14 +621,14 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
 	\begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_damds_100k_binding_patterns}
-        \caption{Java DA-MDS 100k points performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are T,S,V, and U.}
+        \caption{Java DA-MDS 100k points performance on 16 nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are CE,NE,SE, and NI.}
         \label{fig:fig_damds_100k_binding_patterns}
     \end{minipage}
     \hspace{1.4mm}
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_damds_100k_binding_patterns_on_36core_nodes}
-        \caption{Java DA-MDS 100k points performance on 16 of 36-core nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are T,S,V, and U.}
+        \caption{Java DA-MDS 100k points performance on 16 of 36-core nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are CE,NE,SE, and NI.}
         \label{fig:fig_damds_100k_binding_patterns_on_36core_nodes}
     \end{minipage}
 \end{figure*}
@@ -645,7 +645,7 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_damds_200k_binding_patterns_on_36core_nodes}
-        \caption{Java DA-MDS 200k points performance on 16 of 36-core nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are T,S,V, and U.}
+        \caption{Java DA-MDS 200k points performance on 16 of 36-core nodes for \ac{LRT-FJ} and \ac{LRT-BSP} over varying threads and processes. Affinity patterns are CE,NE,SE, and NI.}
         \label{fig:fig_damds_200k_binding_patterns_on_36core_nodes}
     \end{minipage}
 \end{figure*}
@@ -655,14 +655,14 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
 	\begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_kmeans_1mil_varying_centers_Flink_Spark_MPI}
-        \caption{K-Means total and compute times for 1 million 2D points and 1k,10,50k,100k, and 500k centroids for Spark, Flink, and \ac{MPI} Java \ac{LRT-BSP} \texttt{T}. Run on 16 nodes as 24x1.}
+        \caption{K-Means total and compute times for 1 million 2D points and 1k,10,50k,100k, and 500k centroids for Spark, Flink, and \ac{MPI} Java \ac{LRT-BSP} \texttt{CE}. Run on 16 nodes as 24x1.}
         \label{fig:fig_kmeans_1mil_varying_centers_Flink_Spark_MPI}
     \end{minipage}
     \hspace{1.4mm}
     \begin{minipage}{0.49\textwidth}
         \centering
         \includegraphics[width=1\columnwidth]{images/fig_kmeans_100k_varying_centers_Flink_Spark_MPI}
-        \caption{K-Means total and compute times for 100k 2D points and 1k,2k,4k,8k, and 16k centroids for Spark, Flink, and \ac{MPI} Java \ac{LRT-BSP} \texttt{T}. Run on 1 node as 24x1}
+        \caption{K-Means total and compute times for 100k 2D points and 1k,2k,4k,8k, and 16k centroids for Spark, Flink, and \ac{MPI} Java \ac{LRT-BSP} \texttt{CE}. Run on 1 node as 24x1}
         \label{fig:fig_kmeans_100k_varying_centers_Flink_Spark_MPI}
     \end{minipage}
 \end{figure*}
@@ -670,14 +670,14 @@ We used a slightly modified version~\footnote{https://github.com/DSC-SPIDAL/spar
 %perf stat table for LRT-FJ vs LRT-BSP of 100k DA-MDS 18x2x32
 \begin{table}[]
 \centering
-\caption{Linux \texttt{perf} statistics for \ac{DA-MDS} run of 18x2 on 32 nodes. Affinity pattern is \texttt{T}.}
+\caption{Linux \texttt{perf} statistics for \ac{DA-MDS} run of 18x2 on 32 nodes. Affinity pattern is \texttt{CE}.}
 \label{tbl:perf-stats}
 \setlength\extrarowheight{4pt}
 \begin{tabular}{l|r|r|}
 \cline{2-3}
                                                 & \multicolumn{1}{l|}{\textbf{LRT-FJ}} & \multicolumn{1}{l|}{\textbf{LRT-BSP}} \\ \hline
 \multicolumn{1}{|l|}{\textbf{Context Switches}} & 477913                               & 31433                                 \\ \hline
-\multicolumn{1}{|l|}{\textbf{CPU Migrations}}   & 63953                                & 31433                                 \\ \hline
+\multicolumn{1}{|l|}{\textbf{CPU Migrations}}   & 63953                                & 864                                 \\ \hline
 \multicolumn{1}{|l|}{\textbf{dTLB load misses}} & 17226323                             & 6493703                               \\ \hline
 \end{tabular}
 \end{table}
@@ -718,18 +718,18 @@ The experiments were run on Juliet, which is an Intel Haswell \ac{HPC} cluster w
 \subsection{MPI Java and C K-Means}
 \figurename~\ref{fig:fig_kmeans_1mil_1k_binding_patterns} and \figurename~\ref{fig:fig_C_kmeans_1mil_1k_binding_patterns} show K-Means Java and C total runtime for 1 million 2D points and 1000 centroids respectively. Each figure presents performance of both \ac{LRT-FJ} and \ac{LRT-BSP} models over the six binding patterns identified in Table ~\ref{tbl:affinity_patterns}. These were run on 24-core nodes; hence the abscissa shows all the eight possible combinations of threads and processes within a node to exploit the full 24-way parallelism. The left most pattern, 1x24, indicates all processes and the right most pattern, 24x1 indicates all threads within a node. Note, patterns 8x3 and 24x1 imply that processes span across \ac{NUMA} memory boundaries, which is known to be inefficient but presented here for completeness. The red and orange lines represent inherited thread affinity for \ac{LRT-FJ} and \ac{LRT-BSP} respectively. Similarly, the black and green lines illustrate explicit thread pinning, each to a core, for these two thread models. 
 
-Java results suggest \ac{LRT-FJ} is the worst whatever the affinity strategy for any pattern other than 1x24, which is all \ac{MPI} and does not use thread parallel regions. A primary reason for this poor performance is the thread scheduling overhead in Java as \ac{FJ} threads are short-activated. Also, the \ac{JVM} spawns extra bookkeeping threads for \ac{GC} and other tasks, which compete for \acs{CPU} resources as well. Of the \ac{LRT-BSP} lines, the unbound threads (\texttt{U}) show the worst performance. Affinity patterns \texttt{S} and \texttt{T} seem to give the best runtime with increasing number of threads. 
+Java results suggest \ac{LRT-FJ} is the worst whatever the affinity strategy for any pattern other than 1x24, which is all \ac{MPI} and does not use thread parallel regions. A primary reason for this poor performance is the thread scheduling overhead in Java as \ac{FJ} threads are short-activated. Also, the \ac{JVM} spawns extra bookkeeping threads for \ac{GC} and other tasks, which compete for \acs{CPU} resources as well. Of the \ac{LRT-BSP} lines, the unbound threads (\texttt{NI}) show the worst performance. Affinity patterns \texttt{NE} and \texttt{CE} seem to give the best runtime with increasing number of threads. 
 
 C results show the same behavior for unbounded and explicitly bound threads. The two thread models, however, show similar performance, unlike Java. Further investigation of this behavior revealed OpenMP threads keep the \acsp{CPU} occupied at 100\% between \ac{FJ} regions suggesting OpenMP internally optimizes threads similar to the Java \ac{LRT-BSP} implementation introduced in this paper.
 
-\figurename~\ref{fig:images/fig_kmeans_1mil_varying_centers_BSP_T_vs_BSP_S_Java} illustrates the effect of affinity patterns \texttt{T} and \texttt{S} for varying data sizes on \ac{LRT-BSP}. They performed similar to each other, but numbers favor pattern \texttt{T} over \texttt{S}.
+\figurename~\ref{fig:images/fig_kmeans_1mil_varying_centers_BSP_T_vs_BSP_S_Java} illustrates the effect of affinity patterns \texttt{CE} and \texttt{NE} for varying data sizes on \ac{LRT-BSP}. They performed similar to each other, but numbers favor pattern \texttt{CE} over \texttt{NE}.
 
 \figurename~\ref{fig:images/fig_kmeans_1mil_varying_centers_BSP_T_C_vs_Java} compares Java and C \ac{LRT-BSP} runtimes for K-Means over varying data sizes across thread and process combinations. Results demonstrate Java performance is on par with C. Also, sometimes Java outperform C, mostly due to \ac{JIT} optimizations, as seen in the figure for 500k centers. 
 
-\figurename~\ref{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T} and \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_as_50k_500k_FJ_vs_BSP_T} showcase \ac{LRT-FJ} and \ac{LRT-BSP} performance over varying data sizes for affinity pattern \texttt{T}. In \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T}, the number of centroids were incremented as 1k,10k, and 100k. \ac{LRT-BSP} shows constant performance across thread and process combinations for all data sizes, where as \ac{LRT-FJ} exhibits abysmal performance with increasing threads and data sizes. \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_as_50k_500k_FJ_vs_BSP_T} replicates the same experiment for data sizes 50k and 500k. Again, the results agree with those of \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T}.
+\figurename~\ref{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T} and \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_as_50k_500k_FJ_vs_BSP_T} showcase \ac{LRT-FJ} and \ac{LRT-BSP} performance over varying data sizes for affinity pattern \texttt{CE}. In \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T}, the number of centroids were incremented as 1k,10k, and 100k. \ac{LRT-BSP} shows constant performance across thread and process combinations for all data sizes, where as \ac{LRT-FJ} exhibits abysmal performance with increasing threads and data sizes. \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_as_50k_500k_FJ_vs_BSP_T} replicates the same experiment for data sizes 50k and 500k. Again, the results agree with those of \figurename~\ref{fig:fig_kmeans_1mil_varying_centers_by_10k_FJ_vs_BSP_T}.
 
 \subsection{MPI Java \ac{MDS}}
-\figurename~\ref{fig:fig_damds_50k_binding_patterns} through \figurename~\ref{fig:fig_damds_200k_binding_patterns_on_36core_nodes} illustrate \ac{DA-MDS} performance for data sizes 50k, 100k, and 200k on 24-core and 36-core nodes. Each figure presents \ac{DA-MDS} runtime for the two thread models and affinity patterns \texttt{T}, \texttt{V}, \texttt{S}, and \texttt{U}. Patterns \texttt{Q} and \texttt{R} were omitted as they showed similar abysmal performance as \texttt{U} in earlier K-Means results. Thread and process combinations for 24-core nodes are as same as the ones used in K-Means experiments. On 36-core nodes, nine patterns were tested from 1x36 to 36x1. However, as \ac{LRT-BSP} allocates data for all threads at process level, 200k decomposition over 16 nodes produced more data than what Java 1D arrays could hold. Therefore, this pattern could not be tested for 200k data. \ac{LRT-BSP} did not face this situation as data structures are local to threads and each allocates only data required for the thread, which is within Java's array limit of $2^{31} - 1$ elements.
+\figurename~\ref{fig:fig_damds_50k_binding_patterns} through \figurename~\ref{fig:fig_damds_200k_binding_patterns_on_36core_nodes} illustrate \ac{DA-MDS} performance for data sizes 50k, 100k, and 200k on 24-core and 36-core nodes. Each figure presents \ac{DA-MDS} runtime for the two thread models and affinity patterns \texttt{CE}, \texttt{SE}, \texttt{NE}, and \texttt{NI}. Patterns \texttt{CI} and \texttt{SI} were omitted as they showed similar abysmal performance as \texttt{NI} in earlier K-Means results. Thread and process combinations for 24-core nodes are as same as the ones used in K-Means experiments. On 36-core nodes, nine patterns were tested from 1x36 to 36x1. However, as \ac{LRT-BSP} allocates data for all threads at process level, 200k decomposition over 16 nodes produced more data than what Java 1D arrays could hold. Therefore, this pattern could not be tested for 200k data. \ac{LRT-BSP} did not face this situation as data structures are local to threads and each allocates only data required for the thread, which is within Java's array limit of $2^{31} - 1$ elements.
 
 The above results confirm that Java \ac{LRT-FJ} has the lowest performance irrespective of the binding, data size or the number of threads. On the other hand, the \ac{LRT-BSP} model produced constant high performance across all these parameters. Investigating these effects further, an 18x2 run for 100k data produced the \texttt{perf} stats in Table~\ref{tbl:perf-stats}, which show a vast number of context switches, \acs{CPU} migrations, and \acl{dTLB} load misses for \ac{LRT-FJ} compared to \ac{LRT-FJ}. These statistics are directly related with performance and hence explain the poor performance of \ac{LRT-FJ} model.
 
@@ -745,7 +745,7 @@ Since the communication overhead was dominant in K-Means algorithm, we performed
 % %perf stat table for LRT-FJ vs LRT-BSP of 100k DA-MDS 18x2x32
 % \begin{table}[]
 % \centering
-% \caption{Linux \texttt{perf} statistics for \ac{DA-MDS} run of 18x2 on 32 nodes. Affinity pattern is \texttt{T}.}
+% \caption{Linux \texttt{perf} statistics for \ac{DA-MDS} run of 18x2 on 32 nodes. Affinity pattern is \texttt{CE}.}
 % \label{tbl:perf-stats}
 % \begin{tabular}{l|r|r|}
 % \cline{2-3}
@@ -797,9 +797,9 @@ Much research has been done on how to get better performance on multicore cluste
 
 Because of the high number of cores available in multicore nodes, hybrid communication models involving shared memory communication and network communication are preferred. In these models, the tasks within a node first communicate using shared memory and then the results are forwarded to other nodes in the cluster. Previous work by the authors~\cite{hpc2016:spidaljava} focused on improving the collective communications for Java machine learning algorithms using this hybrid approach. 
 
-Hadoop~\cite{lam2010hadoop} became the first widely used system for big data processing and it uses a disk based communication among tasks with HDFS. Hadoop offers only the Map and Reduce  dataflow operations. The later systems such as Twiste~\cite{Ekanayake:2010:TRI:1851476.1851593}, Spark, Flink and Google Cloud Dataflow~\cite{akidau2015dataflow} are using in-memory and network communications among the tasks and are offering a rich set of data-flow operations compared to Hadoop. Bacause of the way communication is handled Spark and Flink, they are much closer to \ac{MPI} in run-time and can use the advanced communication features in MPI. 
+Hadoop~\cite{lam2010hadoop} became the first widely used system for big data processing and it uses a disk based communication among tasks with HDFS. Hadoop offers only the Map and Reduce  dataflow operations. The later systems such as Twister~\cite{Ekanayake:2010:TRI:1851476.1851593}, Spark, Flink and Google Cloud Dataflow~\cite{akidau2015dataflow} are using in-memory and network communications among the tasks and are offering a rich set of data-flow operations compared to Hadoop. Bacause of the way communication is handled Spark and Flink, they are much closer to \ac{MPI} in run-time and can use the advanced communication features in MPI. 
 
-These big data frameworks follow the  dataflow model and the equivalent of collective communications in \ac{MPI} are implemented as  dataflow operators. These implementations are elegant but inefficient compared to the optimized collective communication algorithms implemented in MPI~\cite{pjevsivac2007performance, thakur2005optimization}. Recent work by the authors~\cite{kamburugamuve2016towards} have improved communications of Apache Storm streaming framework with classical collective algorithms found in \ac{MPI} implementations. Harp~\cite{zhang2015harp} is a collective communication framework developed for Hadoop to speed up the machine learning applications. There has being efforts to bring HPC enhancements such as RDMA~\cite{lu2013high} to big data frameworks and these have given excellent performance in HPC environments.
+These big data frameworks follow the  dataflow model and the equivalent of collective communications in \ac{MPI} are implemented as  dataflow operators. These implementations are elegant but inefficient compared to the optimized collective communication algorithms implemented in MPI~\cite{pjevsivac2007performance, thakur2005optimization}. Recent work by the authors~\cite{kamburugamuve2016towards} have improved communications of Apache Storm streaming framework with classical collective algorithms found in \ac{MPI} implementations. Harp~\cite{zhang2015harp} is a collective communication framework developed for Hadoop to speed up the machine learning applications. There has being efforts to bring HPC enhancements such as RDMA~\cite{lu2013high} ASDAto big data frameworks and these have given excellent performance in HPC environments.
 
 Our findings are in the spirit of HPC-ABDS (the High Performance Computing enhanced Apache Big Data Stack)~\cite{kaleidoescope} and help establish a Big Data - HPC convergence approach~\cite{fox1858big}.
 
